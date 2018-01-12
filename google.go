@@ -1,11 +1,11 @@
-package main
+package nyctraintime
 
 import (
 	"context"
 	"fmt"
+	"math/rand"
 	"net/http"
 	"os"
-	"strconv"
 	"strings"
 	"time"
 
@@ -13,19 +13,19 @@ import (
 	"google.golang.org/appengine/log"
 
 	"github.com/NYTimes/marvin"
+	"github.com/go-kit/kit/endpoint"
 	"github.com/jprobinson/dialogflow"
-	"github.com/jprobinson/gosubway"
 )
 
-func NewGoogleServer() dialogflow.GoogleActionServer {
-	return &google{key: os.Getenv("MTA_KEY")}
-}
-
-type google struct {
+type googleService struct {
 	key string
 }
 
-func (g *google) Actions() map[string]dialogflow.GoogleActionHandler {
+func NewGoogleService() dialogflow.GoogleActionService {
+	return &googleService{key: os.Getenv("MTA_KEY")}
+}
+
+func (g *googleService) Actions() map[string]dialogflow.GoogleActionHandler {
 	return map[string]dialogflow.GoogleActionHandler{
 		"my_next_train_request":      g.myTrain,
 		"my_following_train_request": g.myFollowingTrain,
@@ -35,7 +35,49 @@ func (g *google) Actions() map[string]dialogflow.GoogleActionHandler {
 	}
 }
 
-func (g *google) myTrain(ctx context.Context, r *dailogflow.GoogleRequest) (*dialogflow.GoogleFulfillmentResponse, error) {
+// GoodbyeMiddleware will add a generic, random "good bye" message to the end of eligible
+// responses.
+func GoodbyeMiddleware(ep endpoint.Endpoint) endpoint.Endpoint {
+	return func(ctx context.Context, r interface{}) (interface{}, error) {
+		//call our action
+		re, err := ep(ctx, r)
+		if err != nil {
+			return re, err
+		}
+
+		// if no error, add a generic goodbye
+		switch res := re.(type) {
+		case *dialogflow.GoogleFulfillmentResponse:
+			bye := " ..." +
+				goodbyes[rand.New(rand.NewSource(time.Now().Unix())).Intn(len(goodbyes)-1)]
+			if res.Speech == "" {
+				return res, err
+			}
+			res.Speech = res.Speech + bye
+			res.DisplayText = res.Speech
+			return res, err
+		default:
+			return res, err
+		}
+	}
+}
+
+var goodbyes = []string{
+	"Ok, bye!",
+	"Bye bye now",
+	"Peace out!",
+	"Goodbye",
+	"Hope you can catch the train!",
+	"Hope you can make it!",
+	"Adios!",
+	"Au revoir",
+	"Have a good trip!",
+	"Have a good ride!",
+	"Have a save trip!",
+	"Save travels!",
+}
+
+func (g *googleService) myTrain(ctx context.Context, r *dialogflow.GoogleRequest) (*dialogflow.GoogleFulfillmentResponse, error) {
 	uid := r.OriginalRequest.Data.User.UserID
 	if uid == "" {
 		return simpleGoogleResponse("Sorry, you need to be logged in for that to work")
@@ -59,10 +101,10 @@ func (g *google) myTrain(ctx context.Context, r *dailogflow.GoogleRequest) (*dia
 	}
 
 	return simpleGoogleResponse(
-		s.getNextTrainDialog(ctx, ft, mys.Line, mys.Stop, mys.Dir))
+		g.getNextTrainDialog(ctx, ft, mys.Line, mys.Stop, mys.Dir))
 }
 
-func (g *google) myFollowingTrain(ctx context.Context, r *dailogflow.GoogleRequest) (*dialogflow.GoogleFulfillmentResponse, error) {
+func (g *googleService) myFollowingTrain(ctx context.Context, r *dialogflow.GoogleRequest) (*dialogflow.GoogleFulfillmentResponse, error) {
 	uid := r.OriginalRequest.Data.User.UserID
 	if uid == "" {
 		return simpleGoogleResponse("Sorry, you need to be logged in for that to work")
@@ -86,10 +128,10 @@ func (g *google) myFollowingTrain(ctx context.Context, r *dailogflow.GoogleReque
 	}
 
 	return simpleGoogleResponse(
-		s.getFollowingTrainDialog(ctx, ft, mys.Line, mys.Stop, mys.Dir))
+		g.getFollowingTrainDialog(ctx, ft, mys.Line, mys.Stop, mys.Dir))
 }
 
-func (g *google) saveMyStopAction(ctx context.Context, r *dailogflow.GoogleRequest) (*dialogflow.GoogleFulfillmentResponse, error) {
+func (g *googleService) saveMyStopAction(ctx context.Context, r *dialogflow.GoogleRequest) (*dialogflow.GoogleFulfillmentResponse, error) {
 	uid := r.OriginalRequest.Data.User.UserID
 	if uid == "" {
 		return simpleGoogleResponse("Sorry, you need to be logged in for that to work")
@@ -99,7 +141,7 @@ func (g *google) saveMyStopAction(ctx context.Context, r *dailogflow.GoogleReque
 	stop := r.Result.Parameters["subway-stop"].(string)
 	dir := r.Result.Parameters["subway-direction"].(string)
 
-	err = saveMyStop(ctx, uid, line, stop, dir)
+	err := saveMyStop(ctx, uid, line, stop, dir)
 	if err != nil {
 		return nil, marvin.NewJSONStatusResponse(map[string]string{
 			"error": "unable to complete request: " + err.Error(),
@@ -110,7 +152,7 @@ func (g *google) saveMyStopAction(ctx context.Context, r *dailogflow.GoogleReque
 		dir, line, stop))
 }
 
-func (g *google) nextTrain(ctx context.Context, r *dailogflow.GoogleRequest) (*dialogflow.GoogleFulfillmentResponse, error) {
+func (g *googleService) nextTrain(ctx context.Context, r *dialogflow.GoogleRequest) (*dialogflow.GoogleFulfillmentResponse, error) {
 	line := strings.ToUpper(r.Result.Parameters["subway-line"].(string))
 	stop := r.Result.Parameters["subway-stop"].(string)
 	dir := r.Result.Parameters["subway-direction"].(string)
@@ -118,84 +160,24 @@ func (g *google) nextTrain(ctx context.Context, r *dailogflow.GoogleRequest) (*d
 	ft, err := parseFeed(line)
 	if err != nil {
 		log.Debugf(ctx, "unable to parse line: %s", line)
-		res = fmt.Sprintf("sorry, the %s line is not available yet", line)
-		break
+		return simpleGoogleResponse(fmt.Sprintf("Sorry, the %s line is not available yet", line))
 	}
 
-	res = s.getNextTrainDialog(ctx, ft, line, stop, dir) +
-		" If you would like me to remember your stop, ask NYC Train Time to \"save my stop\" and then ask for MY stop next time. "
+	return simpleGoogleResponse(g.getNextTrainDialog(ctx, ft, line, stop, dir) +
+		" If you would like me to remember your stop, ask NYC Train Time to \"save my stop\" and then ask for MY stop next time. ")
 }
 
-func (g *google) followingTrain(ctx context.Context, r *dailogflow.GoogleRequest) (*dialogflow.GoogleFulfillmentResponse, error) {
+func (g *googleService) followingTrain(ctx context.Context, r *dialogflow.GoogleRequest) (*dialogflow.GoogleFulfillmentResponse, error) {
 	line := strings.ToUpper(r.Result.Parameters["subway-line"].(string))
 	stop := r.Result.Parameters["subway-stop"].(string)
 	dir := r.Result.Parameters["subway-direction"].(string)
 	ft, err := parseFeed(line)
 	if err != nil {
 		log.Debugf(ctx, "unable to parse line: %s", line)
-		res = fmt.Sprintf("Sorry, the %s line is not available yet.", line)
-		break
+		return simpleGoogleResponse(
+			fmt.Sprintf("Sorry, the %s line is not available yet.", line))
 	}
-	res = s.getFollowingTrainDialog(ctx, ft, line, stop, dir)
-}
-
-func (s *google) getNextTrainDialog(ctx context.Context, ft gosubway.FeedType, line, stop, dir string) string {
-	return s.getTrainDialog(ctx, ft, "next", line, stop, dir, 0)
-}
-
-func (s *google) getFollowingTrainDialog(ctx context.Context, ft gosubway.FeedType, line, stop, dir string) string {
-	return s.getTrainDialog(ctx, ft, "following", line, stop, dir, 1)
-}
-
-func (s *google) getTrainDialog(ctx context.Context, ft gosubway.FeedType, name, line, stop, dir string, indx int) string {
-	feed, err := getFeed(ctx, s.key, ft)
-	if err != nil {
-		return fmt.Sprintf("Sorry, I'm having problems getting the subway feed. ")
-	}
-
-	stopLine, ok := stopNameToID[stop]
-	if !ok {
-		return fmt.Sprintf("Sorry, I didn't recognise the stop \"%s\". ", stop)
-	}
-
-	stopID, ok := stopLine[line]
-	if !ok {
-		return fmt.Sprintf("Sorry, I didn't recognise \"%s\" as a part of the %s line. ",
-			stop, line)
-	}
-
-	_, north, south := feed.NextTrainTimes(stopID, line)
-
-	var trains []time.Time
-	if trainDirs[line]["northbound"] == dir || dir == "uptown" || dir == "Northbound" {
-		trains = north
-	} else {
-		trains = south
-	}
-
-	if len(trains) < indx+1 {
-		return fmt.Sprintf("Sorry, the %s train time is not available for %s bound %s trains at %s. ",
-			name, dir, line, stop)
-	}
-
-	out := timeSpeak(trains[indx], name, line, stop, dir)
-	if len(trains) >= indx+2 {
-		out += timeSpeak(trains[indx+1], "following", line, stop, dir)
-	}
-	return out
-}
-
-func timeSpeak(t time.Time, name, line, stop, dir string) string {
-	diff := t.Sub(time.Now().UTC())
-	mins := strconv.Itoa(int(diff.Minutes()))
-	secs := strconv.Itoa(int(diff.Seconds()) % 60)
-	out := fmt.Sprintf("The %s %s train will leave %s towards %s in ",
-		name, line, stop, dir)
-	if mins != "0" {
-		out += mins + " minutes and "
-	}
-	out += secs + " seconds. "
-	return out
+	return simpleGoogleResponse(g.getFollowingTrainDialog(ctx, ft, line, stop, dir))
 }
 
 const source = "Where's The Train (NYC)"
@@ -206,25 +188,4 @@ func simpleGoogleResponse(res string) (*dialogflow.GoogleFulfillmentResponse, er
 		DisplayText: res,
 		Source:      source,
 	}, nil
-}
-
-type myStop struct {
-	Line string
-	Stop string
-	Dir  string
-}
-
-func getMyStop(ctx context.Context, userID string) (*myStop, error) {
-	var my myStop
-	err := datastore.Get(ctx, datastore.NewKey(ctx, "MyStop", userID, 0, nil), &my)
-	return &my, err
-}
-
-func saveMyStop(ctx context.Context, userID, line, stop, dir string) error {
-	_, err := datastore.Put(ctx, datastore.NewKey(ctx, "MyStop", userID, 0, nil), &myStop{
-		Line: line,
-		Stop: stop,
-		Dir:  dir,
-	})
-	return err
 }

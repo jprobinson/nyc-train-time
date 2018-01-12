@@ -1,4 +1,4 @@
-package main
+package nyctraintime
 
 var trainDirs = map[string]map[string]string{
 	"1":  {"northbound": "Bronx", "southbound": "South Ferry"},

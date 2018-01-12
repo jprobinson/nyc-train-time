@@ -1,0 +1,62 @@
+[
+    {
+        "value": "Manhattan",
+        "synonyms": [
+            "Manhattan"
+        ]
+    },
+    {
+        "value": "Brooklyn",
+        "synonyms": [
+            "Brooklyn"
+        ]
+    },
+    {
+        "value": "Bronx",
+        "synonyms": [
+            "Bronx"
+        ]
+    },
+    {
+        "value": "Brooklyn Bridge",
+        "synonyms": [
+            "Brooklyn Bridge"
+        ]
+    },
+    {
+        "value": "South Ferry",
+        "synonyms": [
+            "South Ferry"
+        ]
+    },
+    {
+        "value": "Queens",
+        "synonyms": [
+            "Queens"
+        ]
+    },
+    {
+        "value": "uptown",
+        "synonyms": [
+            "uptown"
+        ]
+    },
+    {
+        "value": "downtown",
+        "synonyms": [
+            "downtown"
+        ]
+    },
+    {
+        "value": "Southbound",
+        "synonyms": [
+            "Soutbound"
+        ]
+    },
+    {
+        "value": "Northbound",
+        "synonyms": [
+            "Northbound"
+        ]
+    }
+]

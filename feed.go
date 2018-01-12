@@ -1,10 +1,12 @@
-package main
+package nyctraintime
 
 import (
 	"context"
+	"net/http"
 	"strings"
 	"time"
 
+	"github.com/NYTimes/marvin"
 	"github.com/jprobinson/gosubway"
 	"google.golang.org/appengine/log"
 )
@@ -61,3 +63,6 @@ func parseFeed(line string) (gosubway.FeedType, error) {
 	}
 	return ft, nil
 }
+
+var errBadRequest = marvin.NewJSONStatusResponse(map[string]string{
+	"error": "bad request"}, http.StatusBadRequest)
