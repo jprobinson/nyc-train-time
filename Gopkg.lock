@@ -60,7 +60,7 @@
   branch = "master"
   name = "github.com/jprobinson/dialogflow"
   packages = ["."]
-  revision = "9cb720d3b2bcb518c9f38cda2a4645cd9291b9c6"
+  revision = "82956d67f156001a0218bb894bd085fc0b661b6a"
 
 [[projects]]
   branch = "master"

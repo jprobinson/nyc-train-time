@@ -16,6 +16,9 @@ type service struct {
 
 // Init will register a service with marvin and Google App Engine.
 // Call this in your init function or main function just before appengine.Main.
+//
+// The service will register the webhook on the path "/google" so make sure to configure
+// your fulfillment webhook to point at something like https://example.com/google
 func Init(google GoogleActionService, middleware endpoint.Middleware) {
 	marvin.Init(&service{google: google.Actions(), middleware: middleware})
 }
@@ -29,7 +32,7 @@ func (s *service) Options() []httptransport.ServerOption {
 }
 
 func (s *service) RouterOptions() []marvin.RouterOption {
-	return nil
+	return marvin.RouterSelect("stdlib")
 }
 
 func (s *service) HTTPMiddleware(h http.Handler) http.Handler {
