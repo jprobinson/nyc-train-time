@@ -48,11 +48,11 @@ func GoodbyeMiddleware(ep endpoint.Endpoint) endpoint.Endpoint {
 		// if no error, add a generic goodbye
 		switch res := re.(type) {
 		case *dialogflow.GoogleFulfillmentResponse:
-			bye := " ..." +
-				goodbyes[rand.New(rand.NewSource(time.Now().Unix())).Intn(len(goodbyes)-1)]
 			if res.Speech == "" {
 				return res, err
 			}
+			bye := " ..." +
+				goodbyes[rand.New(rand.NewSource(time.Now().Unix())).Intn(len(goodbyes)-1)]
 			res.Speech = res.Speech + bye
 			res.DisplayText = res.Speech
 			return res, err
