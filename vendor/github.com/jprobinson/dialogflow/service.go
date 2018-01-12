@@ -32,7 +32,7 @@ func (s *service) Options() []httptransport.ServerOption {
 }
 
 func (s *service) RouterOptions() []marvin.RouterOption {
-	return marvin.RouterSelect("stdlib")
+	return []marvin.RouterOption{marvin.RouterSelect("stdlib")}
 }
 
 func (s *service) HTTPMiddleware(h http.Handler) http.Handler {
