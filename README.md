@@ -1,4 +1,4 @@
-# This service powers the ["NYC Train Time" Google Action](https://www.reddit.com/r/nyc/comments/7oeg92/nyc_train_time_is_now_available_as_a_google/)
+# This service powers the ["NYC Train Time" Google Action](https://assistant.google.com/services/a/uid/000000293971eeda?hl=en-US)
 
 * It was written in Go
 * It runs on Google App Engine

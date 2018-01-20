@@ -78,7 +78,7 @@ var stopNameToID = map[string]map[string]string{
 		"2": "128",
 		"5": "128",
 	},
-	"Bedford Park Blvd Lehman College": {
+	"Bedford Park Boulevard Lehman College": {
 		"4": "405",
 	},
 	"Saint Lawrence Avenue": {
@@ -120,7 +120,7 @@ var stopNameToID = map[string]map[string]string{
 		"J": "J29",
 		"L": "L19",
 	},
-	"Briarwood Van Wyck Blvd": {
+	"Briarwood Van Wyck Boulevard": {
 		"E": "F05",
 		"F": "F05",
 	},
@@ -140,7 +140,7 @@ var stopNameToID = map[string]map[string]string{
 	"207th Street": {
 		"1": "108",
 	},
-	"Woodhaven Blvd": {
+	"Woodhaven Boulevard": {
 		"Z": "J15",
 		"R": "G11",
 		"J": "J15",
@@ -169,7 +169,7 @@ var stopNameToID = map[string]map[string]string{
 		"2": "232",
 		"4": "423",
 	},
-	"Northern Blvd": {
+	"Northern Boulevard": {
 		"R": "G16",
 		"E": "G16",
 	},
@@ -221,7 +221,7 @@ var stopNameToID = map[string]map[string]string{
 		"Z": "J27",
 		"L": "L22",
 	},
-	"Parsons Blvd": {
+	"Parsons Boulevard": {
 		"F": "F03",
 	},
 	"59th Street Columbus Circle": {
@@ -311,7 +311,7 @@ var stopNameToID = map[string]map[string]string{
 	"Union Square 14th Street": {
 		"L": "L03",
 	},
-	"Bedford Park Blvd": {
+	"Bedford Park Boulevard": {
 		"D": "D03",
 	},
 	"Court Street": {
@@ -337,7 +337,7 @@ var stopNameToID = map[string]map[string]string{
 		"6X": "604",
 		"6":  "604",
 	},
-	"Rockaway Blvd": {
+	"Rockaway Boulevard": {
 		"A": "A61",
 	},
 	"25th Avenue": {
@@ -388,7 +388,7 @@ var stopNameToID = map[string]map[string]string{
 		"W": "R11",
 		"N": "R11",
 	},
-	"Astoria Ditmars Blvd": {
+	"Astoria Ditmars Boulevard": {
 		"W": "R01",
 		"N": "R01",
 	},
@@ -556,7 +556,7 @@ var stopNameToID = map[string]map[string]string{
 	"Bay Ridge Avenue": {
 		"R": "R42",
 	},
-	"Sutphin Blvd": {
+	"Sutphin Boulevard": {
 		"F": "F04",
 	},
 	"Gun Hill Road": {
@@ -1093,7 +1093,7 @@ var stopNameToID = map[string]map[string]string{
 		"F": "F24",
 		"Q": "D25",
 	},
-	"Astoria Blvd": {
+	"Astoria Boulevard": {
 		"W": "R03",
 		"N": "R03",
 	},
@@ -1233,7 +1233,7 @@ var stopNameToID = map[string]map[string]string{
 		"4": "418",
 		"Z": "M22",
 	},
-	"Sutphin Blvd Archer Av JFK Airport": {
+	"Sutphin Boulevard Archer Av JFK Airport": {
 		"Z": "G06",
 		"J": "G06",
 		"E": "G06",
@@ -1248,7 +1248,7 @@ var stopNameToID = map[string]map[string]string{
 	"Morgan Avenue": {
 		"L": "L14",
 	},
-	"Ozone Park Lefferts Blvd": {
+	"Ozone Park Lefferts Boulevard": {
 		"A": "A65",
 	},
 	"Rockaway Avenue": {
