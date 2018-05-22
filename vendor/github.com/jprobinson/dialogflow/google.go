@@ -3,8 +3,11 @@ package dialogflow
 import (
 	"context"
 	"encoding/json"
+	"io/ioutil"
 	"net/http"
 	"time"
+
+	"google.golang.org/appengine/log"
 )
 
 type (
@@ -36,7 +39,15 @@ func (s service) postGoogle(ctx context.Context, req interface{}) (interface{}, 
 
 func decodeGoogle(ctx context.Context, r *http.Request) (interface{}, error) {
 	var req GoogleRequest
-	err := json.NewDecoder(r.Body).Decode(&req)
+	bod, err := ioutil.ReadAll(r.Body)
+	if err != nil {
+		return nil, errBadRequest
+	}
+	defer r.Body.Close()
+
+	log.Debugf(ctx, "inbound: %s", string(bod))
+	err = json.Unmarshal(bod, &req)
+	//	err := json.NewDecoder(r.Body).Decode(&req)
 	if err != nil {
 		return nil, errBadRequest
 	}
@@ -50,6 +61,72 @@ type GoogleFulfillmentResponse struct {
 	DisplayText string                   `json:"displayText,omitempty"`
 	Source      string                   `json:"source,omitempty"`
 	ContextOut  []map[string]interface{} `json:"contextOut"`
+}
+
+type GoogleV2FulfillmentResponse struct {
+	Speech      string                   `json:"speech,omitempty"`
+	DisplayText string                   `json:"displayText,omitempty"`
+	Source      string                   `json:"source,omitempty"`
+	ContextOut  []map[string]interface{} `json:"contextOut"`
+}
+
+type GoogleV2Request struct {
+	ResponseID  string `json:"responseId"`
+	QueryResult struct {
+		QueryText  string `json:"queryText"`
+		Action     string `json:"action"`
+		Parameters struct {
+		} `json:"parameters"`
+		AllRequiredParamsPresent bool          `json:"allRequiredParamsPresent"`
+		FulfillmentText          string        `json:"fulfillmentText"`
+		FulfillmentMessages      []interface{} `json:"fulfillmentMessages"`
+		OutputContexts           []struct {
+			Name string `json:"name"`
+		} `json:"outputContexts"`
+		Intent struct {
+			Name        string `json:"name"`
+			DisplayName string `json:"displayName"`
+		} `json:"intent"`
+		IntentDetectionConfidence int `json:"intentDetectionConfidence"`
+		DiagnosticInfo            struct {
+		} `json:"diagnosticInfo"`
+		LanguageCode string `json:"languageCode"`
+	} `json:"queryResult"`
+	OriginalDetectIntentRequest struct {
+		Source  string `json:"source"`
+		Version string `json:"version"`
+		Payload struct {
+			IsInSandbox bool `json:"isInSandbox"`
+			Surface     struct {
+				Capabilities []struct {
+					Name string `json:"name"`
+				} `json:"capabilities"`
+			} `json:"surface"`
+			Inputs []struct {
+				RawInputs []struct {
+					Query     string `json:"query"`
+					InputType string `json:"inputType"`
+				} `json:"rawInputs"`
+				Intent string `json:"intent"`
+			} `json:"inputs"`
+			User struct {
+				LastSeen    time.Time `json:"lastSeen"`
+				Permissions []string  `json:"permissions"`
+				Locale      string    `json:"locale"`
+				UserID      string    `json:"userId"`
+			} `json:"user"`
+			Conversation struct {
+				ConversationID string `json:"conversationId"`
+				Type           string `json:"type"`
+			} `json:"conversation"`
+			AvailableSurfaces []struct {
+				Capabilities []struct {
+					Name string `json:"name"`
+				} `json:"capabilities"`
+			} `json:"availableSurfaces"`
+		} `json:"payload"`
+	} `json:"originalDetectIntentRequest"`
+	Session string `json:"session"`
 }
 
 // GoogleRequest contains the information of an incoming DialogFlow request from Google
