@@ -214,7 +214,7 @@ var stopNameToID = map[string]map[string]string{
 		"R":  "R43",
 		"6":  "627",
 	},
-	"Broadway Jct": {
+	"Broadway Junction": {
 		"A": "A51",
 		"C": "A51",
 		"J": "J27",
