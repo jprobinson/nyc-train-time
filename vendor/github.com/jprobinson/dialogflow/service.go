@@ -1,3 +1,4 @@
+// A Google App Engine framework for building services that respond to DialogFlow actions.
 package dialogflow
 
 import (

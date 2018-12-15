@@ -30,6 +30,7 @@ const (
 	OrangeFeed   FeedType = 21
 	LFeed        FeedType = 2
 	GFeed        FeedType = 31
+	SevenFeed    FeedType = 51
 	BrownFeed    FeedType = 36
 )
 

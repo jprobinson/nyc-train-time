@@ -1,4 +1,5 @@
 import csv
+import re
 import json
 from collections import defaultdict
 
@@ -11,6 +12,7 @@ trains = {
         "5": {"northbound": "Bronx","southbound": "Brooklyn"},
         "5X": {"northbound": "Bronx","southbound": "Brooklyn"},
         "6": {"northbound": "Bronx","southbound": "Brooklyn Brdg"},
+        "7": {"northbound": "Queens","southbound": "Manhattan"},
         "6X": {"northbound": "Bronx","southbound": "Brooklyn Brdg"},
         "S": {"northbound": "","southbound": ""},
         "L": {"northbound": "Manhattan","southbound": "Brooklyn"},
@@ -73,28 +75,61 @@ for train in sstop_seqs:
 
 
 all_stops = dict()
+avenue = re.compile("Av($| -)")
+avenues = re.compile("Avs($| -)")
+street = re.compile("St($| -)")
+streets = re.compile("Sts($| -)")
 
 with open('stops.txt','r') as csvin:
     reader=csv.DictReader(csvin)
     out = dict()
     for line in reader:
         # all_stops[line['stop_id']] = {"name":line['stop_name'],"lat":line['stop_lat'],"long":line['stop_lon']}
-        # all_stops[line['stop_id']] = line['stop_name']
+        all_stops[line['stop_id']] = line['stop_name']
+        '''
         name = line['stop_name'].replace("(",",").replace(")","")
         name = name.replace("Hts", "Heights")
         name = name.replace("Sq", "Square")
         name = name.replace("Pkwy", "Parkway")
+        name = name.replace("Blvd", "Boulevard")
+        name = name.replace("Hwy", "Highway")
+        name = name.replace("Ctr", "Center")
+        name = name.replace("1 ", "1st ")
+        name = name.replace("2 ", "2nd ")
+        name = name.replace("2-", "2nd ")
+        name = name.replace("3 ", "3rd ")
+        name = name.replace("4 ", "4th ")
+        name = name.replace("4-", "4th ")
+        name = name.replace("5 ", "5th ")
+        name = name.replace("6 ", "6th ")
+        name = name.replace("7 ", "7th ")
+        name = name.replace("7-", "7th ")
+        name = name.replace("8 ", "8th ")
+        name = name.replace("9 ", "9th ")
+        name = name.replace("0 ", "0th ")
+        name = name.replace("E ", "East ")
+        name = name.replace("W ", "West ")
+        name = name.replace("N ", "North ")
+        name = name.replace("S ", "South ")
+        name = avenue.sub("Avenue", name)
+        name = avenues.sub("Avenues", name)
+        name = street.sub("Street", name)
+        name = streets.sub("Streets", name)
+        name = name.replace(" - ", " ")
+        name = name.replace("/", " ")
         names = set(name.split(","))
         names.add(name)
         all_stops[line['stop_id']] = {"value":name,"synonyms":list(names)}
-        out[name] = {"value":name,"synonyms":list(names)}
+        out[name] = {"synonyms":list(names),"value":name}
 
     outs = []
     for k in out:
         outs.append(out[k])
+    print json.dumps(outs)
+    exit(0)
 
-#     print json.dumps(outs)
- ###   exit(0)
+        '''
+
 
 out = dict()
 for train, stops in train_stops.items():
@@ -104,12 +139,14 @@ for train, stops in train_stops.items():
 
         train_stops[train]['stops'][i].append(all_stops[stop[0]])
         train_stops[train]['stops'][i][0] = train_stops[train]['stops'][i][0][:-1]
+        '''
         if all_stops[stop[0]]["value"] in out:
             out[all_stops[stop[0]]["value"]][train] = stop[0]
             continue
 
         out[all_stops[stop[0]]["value"]] = {train:stop[0]}
+      '''
 
-# print json.dumps(train_stops)
-print json.dumps(out)
+print json.dumps(train_stops)
+# print json.dumps(out)
 

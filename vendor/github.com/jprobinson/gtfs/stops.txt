@@ -104,9 +104,9 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 137,,Chambers St,,40.715478,-74.009266,,,1,
 137N,,Chambers St,,40.715478,-74.009266,,,0,137
 137S,,Chambers St,,40.715478,-74.009266,,,0,137
-138,,Cortlandt St,,40.711835,-74.012188,,,1,
-138N,,Cortlandt St,,40.711835,-74.012188,,,0,138
-138S,,Cortlandt St,,40.711835,-74.012188,,,0,138
+138,,WTC Cortlandt,,40.711835,-74.012188,,,1,
+138N,,WTC Cortlandt,,40.711835,-74.012188,,,0,138
+138S,,WTC Cortlandt,,40.711835,-74.012188,,,0,138
 139,,Rector St,,40.707513,-74.013783,,,1,
 139N,,Rector St,,40.707513,-74.013783,,,0,139
 139S,,Rector St,,40.707513,-74.013783,,,0,139

@@ -16,7 +16,7 @@ type (
 	}
 
 	// GoogleActionHandler encapsulates the logic for a single action for a Google
-	// Actio.
+	// Action.
 	// For more information about the request and response, see the DialogFlow
 	// documentation for fulfillment: https://dialogflow.com/docs/fulfillment
 	GoogleActionHandler func(context.Context, *GoogleRequest) (*GoogleFulfillmentResponse, error)
@@ -46,10 +46,18 @@ func decodeGoogle(ctx context.Context, r *http.Request) (interface{}, error) {
 // GoogleFulfillmentResponse is the response DialogFlow expects for Google Actions.
 // More information here: https://dialogflow.com/docs/fulfillment#response
 type GoogleFulfillmentResponse struct {
-	Speech      string                   `json:"speech,omitempty"`
-	DisplayText string                   `json:"displayText,omitempty"`
-	Source      string                   `json:"source,omitempty"`
-	ContextOut  []map[string]interface{} `json:"contextOut"`
+	Speech        string                   `json:"speech,omitempty"`
+	DisplayText   string                   `json:"displayText,omitempty"`
+	Source        string                   `json:"source,omitempty"`
+	ContextOut    []map[string]interface{} `json:"contextOut"`
+	FollowUpEvent *FollowUpEvent           `json:"followupEvent"`
+}
+
+// FollowUpEvent allows an action to redirect to a new dialogflow 'event' instead of
+// immediately responding.
+type FollowUpEvent struct {
+	Name string                 `json:"name"`
+	Data map[string]interface{} `json:"data"`
 }
 
 // GoogleRequest contains the information of an incoming DialogFlow request from Google

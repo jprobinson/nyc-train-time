@@ -56,6 +56,8 @@ func parseFeed(line string) (gosubway.FeedType, error) {
 		ft = gosubway.BrownFeed
 	case "L":
 		ft = gosubway.LFeed
+	case "7":
+		ft = gosubway.SevenFeed
 	case "G":
 		ft = gosubway.GFeed
 	default:

@@ -2,138 +2,175 @@
 
 
 [[projects]]
+  digest = "1:a639b30711f62030ade1432a6bcf135c23c38607d1478d3ce53829ea2a664197"
   name = "cloud.google.com/go"
   packages = ["compute/metadata"]
-  revision = "050b16d2314d5fc3d4c9a51e4cd5c7468e77f162"
-  version = "v0.17.0"
+  pruneopts = ""
+  revision = "0ebda48a7f143b1cce9eb37a8c1106ac762a3430"
+  version = "v0.34.0"
 
 [[projects]]
+  digest = "1:1da4be9026dbd733e0590aeaa63cbc981ab7b4d9e3ecff2cbe68179c279c9cac"
   name = "github.com/NYTimes/marvin"
   packages = [
     ".",
-    "internal"
+    "internal",
   ]
-  revision = "e2aa394d2ca2ef39215c9910fa6498792472c0d9"
-  version = "v0.1.3"
+  pruneopts = ""
+  revision = "b6462473353065e6bea2093ff2b777915550eec0"
+  version = "v0.1.4"
 
 [[projects]]
+  digest = "1:44ec1082ba97d89ce860abcc6ee3f0cf24e658d3efb8531b0f0a52f0781e4243"
   name = "github.com/go-kit/kit"
   packages = [
     "endpoint",
     "log",
-    "transport/http"
+    "transport/http",
   ]
+  pruneopts = ""
   revision = "4dc7be5d2d12881735283bcab7352178e190fc71"
   version = "v0.6.0"
 
 [[projects]]
+  digest = "1:df89444601379b2e1ee82bf8e6b72af9901cbeed4b469fa380a519c89c339310"
   name = "github.com/go-logfmt/logfmt"
   packages = ["."]
-  revision = "390ab7935ee28ec6b286364bba9b4dd6410cb3d5"
-  version = "v0.3.0"
+  pruneopts = ""
+  revision = "07c9b44f60d7ffdfb7d8efe1ad539965737836dc"
+  version = "v0.4.0"
 
 [[projects]]
+  digest = "1:a01080d20c45c031c13f3828c56e58f4f51d926a482ad10cc0316225097eb7ea"
   name = "github.com/go-stack/stack"
   packages = ["."]
-  revision = "259ab82a6cad3992b4e21ff5cac294ccb06474bc"
-  version = "v1.7.0"
+  pruneopts = ""
+  revision = "2fee6af1a9795aafbe0253a0cfbdf668e1fb8a9a"
+  version = "v1.8.0"
 
 [[projects]]
-  branch = "master"
+  digest = "1:3dd078fda7500c341bc26cfbc6c6a34614f295a2457149fc1045cab767cbcf18"
   name = "github.com/golang/protobuf"
   packages = ["proto"]
-  revision = "1e59b77b52bf8e4b449a57e6f79f21226d571845"
+  pruneopts = ""
+  revision = "aa810b61a9c79d51363740d207bb46cf8e620ed5"
+  version = "v1.2.0"
 
 [[projects]]
+  digest = "1:dbbeb8ddb0be949954c8157ee8439c2adfd8dc1c9510eb44a6e58cb68c3dce28"
   name = "github.com/gorilla/context"
   packages = ["."]
-  revision = "1ea25387ff6f684839d82767c1733ff4d4d15d0a"
-  version = "v1.1"
+  pruneopts = ""
+  revision = "08b5f424b9271eedf6f9f0ce86cb9396ed337a42"
+  version = "v1.1.1"
 
 [[projects]]
+  digest = "1:c2c8666b4836c81a1d247bdf21c6a6fc1ab586538ab56f74437c2e0df5c375e1"
   name = "github.com/gorilla/mux"
   packages = ["."]
-  revision = "7f08801859139f86dfafd1c296e2cba9a80d292e"
-  version = "v1.6.0"
+  pruneopts = ""
+  revision = "e3702bed27f0d39777b0b37b664b6280e8ef8fbf"
+  version = "v1.6.2"
 
 [[projects]]
   branch = "master"
+  digest = "1:6866be48f181c218ab58119e9a6d7481e8813818b40b548bda2bc6db1aa1af24"
   name = "github.com/jprobinson/dialogflow"
   packages = ["."]
-  revision = "4d725bf9877b8ed720295f88490317fb17f501fb"
+  pruneopts = ""
+  revision = "3242f3a6013a913b546d31f137d91eb883669e6a"
 
 [[projects]]
   branch = "master"
+  digest = "1:9a74973b2454681b07b7dfb6d556145ad68c98e81383db3e256c7ef92f0fc49f"
   name = "github.com/jprobinson/gosubway"
   packages = ["."]
-  revision = "e17435de0a07bf7154056d49d69340bf4203b5ca"
+  pruneopts = ""
+  revision = "7c60290196ab49333dbda46bd6d5719ca3aa1318"
 
 [[projects]]
   branch = "master"
+  digest = "1:e7af1952003ca3b524f0631c57f6c7c55e0482c3ef33a5f8486999585d464a7b"
   name = "github.com/jprobinson/gtfs"
   packages = [
     "nyct_subway_proto",
-    "transit_realtime"
+    "transit_realtime",
   ]
-  revision = "1b96774e22780c9dae535041173d82f1d7bb3436"
+  pruneopts = ""
+  revision = "d9558d2404103b5119a511ef92d59d1c6e2d3918"
 
 [[projects]]
   branch = "master"
+  digest = "1:1c2fc412375033d9b9f3f7fc5e9554d94c9a82a042c6e03d03ccc207e9f14928"
   name = "github.com/julienschmidt/httprouter"
   packages = ["."]
-  revision = "e1b9828bc9e5904baec057a154c09ca40fe7fae0"
+  pruneopts = ""
+  revision = "26a05976f9bf5c3aa992cc20e8588c359418ee58"
 
 [[projects]]
+  digest = "1:b60a24f942c7031ece6c48bcab0b683c7d3d6aa9fd17e21459d9ae604da258fa"
   name = "github.com/kelseyhightower/envconfig"
   packages = ["."]
+  pruneopts = ""
   revision = "f611eb38b3875cc3bd991ca91c51d06446afa14c"
   version = "v1.3.0"
 
 [[projects]]
   branch = "master"
+  digest = "1:1ed9eeebdf24aadfbca57eb50e6455bd1d2474525e0f0d4454de8c8e9bc7ee9a"
   name = "github.com/kr/logfmt"
   packages = ["."]
+  pruneopts = ""
   revision = "b84e30acd515aadc4b783ad4ff83aff3299bdfe0"
 
 [[projects]]
+  digest = "1:7365acd48986e205ccb8652cc746f09c8b7876030d53710ea6ef7d0bd0dcd7ca"
   name = "github.com/pkg/errors"
   packages = ["."]
+  pruneopts = ""
   revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
   version = "v0.8.0"
 
 [[projects]]
   branch = "master"
+  digest = "1:1e21bd471bcad726f573e5e41b7eafe690a1724fdebac6e633d06b58b702d88d"
   name = "golang.org/x/net"
   packages = [
     "context",
-    "context/ctxhttp"
+    "context/ctxhttp",
   ]
-  revision = "ab555f366c4508dbe0802550b1b20c46c5c18aa0"
+  pruneopts = ""
+  revision = "891ebc4b82d6e74f468c533b06f983c7be918a96"
 
 [[projects]]
   branch = "master"
+  digest = "1:ea010cdb976f9de0c763728a76278f9109fca3299abd0dc3e8f2ccb9ff347268"
   name = "golang.org/x/oauth2"
   packages = [
     ".",
     "google",
     "internal",
     "jws",
-    "jwt"
+    "jwt",
   ]
-  revision = "30785a2c434e431ef7c507b54617d6a951d5f2b4"
+  pruneopts = ""
+  revision = "d668ce993890a79bda886613ee587a69dd5da7a6"
 
 [[projects]]
   branch = "master"
+  digest = "1:b2d1813b3660d82969b796b55e0f686890a792a66b3229d7028090d29b6dfdab"
   name = "google.golang.org/api"
   packages = [
     "appengine/v1",
     "gensupport",
     "googleapi",
-    "googleapi/internal/uritemplates"
+    "googleapi/internal/uritemplates",
   ]
-  revision = "37df4fabefb044819e927f44b8487d4cd926d06c"
+  pruneopts = ""
+  revision = "874d9dc5b186e361475b082852f136f094555c30"
 
 [[projects]]
+  digest = "1:77d3cff3a451d50be4b52db9c7766c0d8570ba47593f0c9dc72173adb208e788"
   name = "google.golang.org/appengine"
   packages = [
     ".",
@@ -148,14 +185,23 @@
     "internal/urlfetch",
     "log",
     "module",
-    "urlfetch"
+    "urlfetch",
   ]
-  revision = "150dc57a1b433e64154302bdc40b6bb8aefa313a"
-  version = "v1.0.0"
+  pruneopts = ""
+  revision = "4a4468ece617fc8205e99368fa2200e9d1fad421"
+  version = "v1.3.0"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "5aeb6d9bef3f499e72d9ac24d13f32d3aa70228188fc8e99916aa072b704b1d5"
+  input-imports = [
+    "github.com/NYTimes/marvin",
+    "github.com/go-kit/kit/endpoint",
+    "github.com/jprobinson/dialogflow",
+    "github.com/jprobinson/gosubway",
+    "google.golang.org/appengine",
+    "google.golang.org/appengine/datastore",
+    "google.golang.org/appengine/log",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
