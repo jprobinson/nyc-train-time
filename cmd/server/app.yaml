@@ -1,5 +1,5 @@
 runtime: go111
-service: botv2
+service: bot
 
 inbound_services:
 - warmup
