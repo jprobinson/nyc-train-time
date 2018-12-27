@@ -2,13 +2,14 @@ package nyctraintime
 
 import (
 	"context"
+	"fmt"
 	"net/http"
 	"strings"
 	"time"
 
+	"github.com/NYTimes/gizmo/server/kit"
 	"github.com/NYTimes/marvin"
 	"github.com/jprobinson/gosubway"
-	"google.golang.org/appengine/log"
 )
 
 const (
@@ -36,7 +37,7 @@ func getFeed(ctx context.Context, key string, ft gosubway.FeedType) (*gosubway.F
 			(err != nil && strings.Contains(err.Error(), "deadline exceeded")) {
 			break
 		}
-		log.Errorf(ctx, "unable to get mta feed on attempt %d: %s", attempt, err)
+		kit.LogErrorMsg(ctx, err, fmt.Sprintf("unable to get mta feed on attempt %d", attempt))
 	}
 	return feed, err
 }

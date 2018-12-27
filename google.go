@@ -10,34 +10,41 @@ import (
 	"time"
 
 	"google.golang.org/appengine/datastore"
-	"google.golang.org/appengine/log"
 
+	"github.com/NYTimes/gizmo/server/kit"
 	"github.com/NYTimes/marvin"
 	"github.com/go-kit/kit/endpoint"
 	"github.com/jprobinson/dialogflow"
 )
 
-type googleService struct {
+type service struct {
 	key string
+	db  *db
 }
 
-func NewGoogleService() dialogflow.GoogleActionService {
-	return &googleService{key: os.Getenv("MTA_KEY")}
+func NewService() (dialogflow.FulfillmentService, error) {
+	ctx := context.Background()
+
+	db, err := newDB(ctx, os.Getenv("GOOGLE_CLOUD_PROJECT"))
+	if err != nil {
+		return nil, err
+	}
+	return &service{key: os.Getenv("MTA_KEY"), db: db}, nil
 }
 
-func (g *googleService) Actions() map[string]dialogflow.GoogleActionHandler {
-	return map[string]dialogflow.GoogleActionHandler{
-		"my_next_train_request":      g.myTrain,
-		"my_following_train_request": g.myFollowingTrain,
-		"save_my_stop_request":       g.saveMyStopAction,
-		"next_train_request":         g.nextTrain,
-		"following_train_request":    g.followingTrain,
+func (g *service) Intents() map[string]dialogflow.IntentHandler {
+	return map[string]dialogflow.IntentHandler{
+		"My Next Train":      g.myTrain,
+		"My Following Train": g.myFollowingTrain,
+		"Save My Stop":       g.saveMyStopAction,
+		"Next Train":         g.nextTrain,
+		"Following Train":    g.followingTrain,
 	}
 }
 
-// GoodbyeMiddleware will add a generic, random "good bye" message to the end of eligible
+// Middleware will add a generic, random "good bye" message to the end of eligible
 // responses.
-func GoodbyeMiddleware(ep endpoint.Endpoint) endpoint.Endpoint {
+func (s *service) Middleware(ep endpoint.Endpoint) endpoint.Endpoint {
 	return func(ctx context.Context, r interface{}) (interface{}, error) {
 		//call our action
 		re, err := ep(ctx, r)
@@ -47,14 +54,13 @@ func GoodbyeMiddleware(ep endpoint.Endpoint) endpoint.Endpoint {
 
 		// if no error, add a generic goodbye
 		switch res := re.(type) {
-		case *dialogflow.GoogleFulfillmentResponse:
-			if res.Speech == "" {
+		case *dialogflow.FulfillmentResponse:
+			if res.FulfillmentText == "" {
 				return res, err
 			}
 			bye := " ..." +
 				goodbyes[rand.New(rand.NewSource(time.Now().Unix())).Intn(len(goodbyes)-1)]
-			res.Speech = res.Speech + bye
-			res.DisplayText = res.Speech
+			res.FulfillmentText = res.FulfillmentText + bye
 			return res, err
 		default:
 			return res, err
@@ -77,115 +83,114 @@ var goodbyes = []string{
 	"Save travels!",
 }
 
-func (g *googleService) myTrain(ctx context.Context, r *dialogflow.GoogleRequest) (*dialogflow.GoogleFulfillmentResponse, error) {
-	uid := r.OriginalRequest.Data.User.UserID
+func (s *service) myTrain(ctx context.Context, r *dialogflow.Request) (*dialogflow.FulfillmentResponse, error) {
+	uid := r.OriginalDetectIntentRequest.Payload.User.UserID
 	if uid == "" {
-		return simpleGoogleResponse("Sorry, you need to be logged in for that to work")
+		return simpleResponse("Sorry, you need to be logged in for that to work")
 	}
-	mys, err := getMyStop(ctx, uid)
+	mys, err := s.db.getMyStop(ctx, uid)
 	if err == datastore.ErrNoSuchEntity {
-		return simpleGoogleResponse(
+		return simpleResponse(
 			"It looks like you haven't saved your personalized subway stop yet! Ask NYC Train Time to \"save my stop\" to create or update your stop.")
 	}
 	if err != nil {
-		log.Debugf(ctx, "unable to get my stop: %s", err)
-		return simpleGoogleResponse(
+		kit.LogErrorMsg(ctx, err, "unable to get my stops")
+		return simpleResponse(
 			"Sorry, we were unable to access the train feed. Please try again")
 	}
 
 	ft, err := parseFeed(mys.Line)
 	if err != nil {
-		log.Debugf(ctx, "unable to parse line: %s", mys.Line)
-		return simpleGoogleResponse(
+		kit.LogMsg(ctx, "unable to parse line: "+mys.Line)
+		return simpleResponse(
 			fmt.Sprintf("sorry, the %s line is not available yet", mys.Line))
 	}
 
-	return simpleGoogleResponse(
-		g.getNextTrainDialog(ctx, ft, mys.Line, mys.Stop, mys.Dir))
+	return simpleResponse(
+		s.getNextTrainDialog(ctx, ft, mys.Line, mys.Stop, mys.Dir))
 }
 
-func (g *googleService) myFollowingTrain(ctx context.Context, r *dialogflow.GoogleRequest) (*dialogflow.GoogleFulfillmentResponse, error) {
-	uid := r.OriginalRequest.Data.User.UserID
+func (s *service) myFollowingTrain(ctx context.Context, r *dialogflow.Request) (*dialogflow.FulfillmentResponse, error) {
+	uid := r.OriginalDetectIntentRequest.Payload.User.UserID
 	if uid == "" {
-		return simpleGoogleResponse("Sorry, you need to be logged in for that to work")
+		return simpleResponse("Sorry, you need to be logged in for that to work")
 	}
-	mys, err := getMyStop(ctx, uid)
+	mys, err := s.db.getMyStop(ctx, uid)
 	if err == datastore.ErrNoSuchEntity {
-		return simpleGoogleResponse(
+		return simpleResponse(
 			"It looks like you haven't saved your personalized subway stop yet! Ask NYC Train Time to \"save my stop\" to create or update your stop.")
 	}
 	if err != nil {
-		log.Debugf(ctx, "unable to get my stop: %s", err)
-		return simpleGoogleResponse(
+		kit.LogErrorMsg(ctx, err, "unable to get my stop")
+		return simpleResponse(
 			"Sorry, we were unable to access the train feed. Please try again")
 	}
 
 	ft, err := parseFeed(mys.Line)
 	if err != nil {
-		log.Debugf(ctx, "unable to parse line: %s", mys.Line)
-		return simpleGoogleResponse(
+		kit.LogMsg(ctx, "unable to parse line: "+mys.Line)
+		return simpleResponse(
 			fmt.Sprintf("sorry, the %s line is not available yet", mys.Line))
 	}
 
-	return simpleGoogleResponse(
-		g.getFollowingTrainDialog(ctx, ft, mys.Line, mys.Stop, mys.Dir))
+	return simpleResponse(
+		s.getFollowingTrainDialog(ctx, ft, mys.Line, mys.Stop, mys.Dir))
 }
 
-func (g *googleService) saveMyStopAction(ctx context.Context, r *dialogflow.GoogleRequest) (*dialogflow.GoogleFulfillmentResponse, error) {
-	uid := r.OriginalRequest.Data.User.UserID
+func (s *service) saveMyStopAction(ctx context.Context, r *dialogflow.Request) (*dialogflow.FulfillmentResponse, error) {
+	uid := r.OriginalDetectIntentRequest.Payload.User.UserID
 	if uid == "" {
-		return simpleGoogleResponse("Sorry, you need to be logged in for that to work")
+		return simpleResponse("Sorry, you need to be logged in for that to work")
 	}
 
-	line := strings.ToUpper(r.Result.Parameters["subway-line"].(string))
-	stop := r.Result.Parameters["subway-stop"].(string)
-	dir := r.Result.Parameters["subway-direction"].(string)
+	line := strings.ToUpper(r.QueryResult.Parameters["subway-line"].(string))
+	stop := r.QueryResult.Parameters["subway-stop"].(string)
+	dir := r.QueryResult.Parameters["subway-direction"].(string)
 
-	err := saveMyStop(ctx, uid, line, stop, dir)
+	err := s.db.saveMyStop(ctx, uid, line, stop, dir)
 	if err != nil {
 		return nil, marvin.NewJSONStatusResponse(map[string]string{
 			"error": "unable to complete request: " + err.Error(),
 		}, http.StatusInternalServerError)
 	}
-	return simpleGoogleResponse(fmt.Sprintf(
+	return simpleResponse(fmt.Sprintf(
 		"Successfully saved your stop, %s bound %s trains at %s. To update your stop again, ask NYC Train Time to \"save my stop\". ",
 		dir, line, stop))
 }
 
-func (g *googleService) nextTrain(ctx context.Context, r *dialogflow.GoogleRequest) (*dialogflow.GoogleFulfillmentResponse, error) {
-	line := strings.ToUpper(r.Result.Parameters["subway-line"].(string))
-	stop := r.Result.Parameters["subway-stop"].(string)
-	dir := r.Result.Parameters["subway-direction"].(string)
+func (g *service) nextTrain(ctx context.Context, r *dialogflow.Request) (*dialogflow.FulfillmentResponse, error) {
+	line := strings.ToUpper(r.QueryResult.Parameters["subway-line"].(string))
+	stop := r.QueryResult.Parameters["subway-stop"].(string)
+	dir := r.QueryResult.Parameters["subway-direction"].(string)
 
 	ft, err := parseFeed(line)
 	if err != nil {
-		log.Debugf(ctx, "unable to parse line: %s", line)
-		return simpleGoogleResponse(fmt.Sprintf("Sorry, the %s line is not available yet", line))
+		kit.LogMsg(ctx, "unable to parse line: "+line)
+		return simpleResponse(fmt.Sprintf("Sorry, the %s line is not available yet", line))
 	}
 
-	return simpleGoogleResponse(g.getNextTrainDialog(ctx, ft, line, stop, dir) +
+	return simpleResponse(g.getNextTrainDialog(ctx, ft, line, stop, dir) +
 		" If you would like me to remember your stop, ask NYC Train Time to \"save my stop\" and then ask for MY stop next time. ")
 }
 
-func (g *googleService) followingTrain(ctx context.Context, r *dialogflow.GoogleRequest) (*dialogflow.GoogleFulfillmentResponse, error) {
-	line := strings.ToUpper(r.Result.Parameters["subway-line"].(string))
-	stop := r.Result.Parameters["subway-stop"].(string)
-	dir := r.Result.Parameters["subway-direction"].(string)
+func (g *service) followingTrain(ctx context.Context, r *dialogflow.Request) (*dialogflow.FulfillmentResponse, error) {
+	line := strings.ToUpper(r.QueryResult.Parameters["subway-line"].(string))
+	stop := r.QueryResult.Parameters["subway-stop"].(string)
+	dir := r.QueryResult.Parameters["subway-direction"].(string)
 	ft, err := parseFeed(line)
 	if err != nil {
-		log.Debugf(ctx, "unable to parse line: %s", line)
-		return simpleGoogleResponse(
+		kit.LogMsg(ctx, "unable to parse line: "+line)
+		return simpleResponse(
 			fmt.Sprintf("Sorry, the %s line is not available yet.", line))
 	}
-	return simpleGoogleResponse(g.getFollowingTrainDialog(ctx, ft, line, stop, dir))
+	return simpleResponse(g.getFollowingTrainDialog(ctx, ft, line, stop, dir))
 }
 
 const source = "Where's The Train (NYC)"
 
-func simpleGoogleResponse(res string) (*dialogflow.GoogleFulfillmentResponse, error) {
-	return &dialogflow.GoogleFulfillmentResponse{
-		Speech:      res,
-		DisplayText: res,
-		Source:      source,
+func simpleResponse(res string) (*dialogflow.FulfillmentResponse, error) {
+	return &dialogflow.FulfillmentResponse{
+		FulfillmentText: res,
+		Source:          source,
 	}, nil
 }

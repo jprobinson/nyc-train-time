@@ -1,0 +1,5 @@
+runtime: go111
+service: bot
+
+inbound_services:
+- warmup
