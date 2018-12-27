@@ -34,11 +34,11 @@ func NewService() (dialogflow.FulfillmentService, error) {
 
 func (g *service) Intents() map[string]dialogflow.IntentHandler {
 	return map[string]dialogflow.IntentHandler{
-		"my_next_train_request":      g.myTrain,
-		"my_following_train_request": g.myFollowingTrain,
-		"save_my_stop_request":       g.saveMyStopAction,
-		"next_train_request":         g.nextTrain,
-		"following_train_request":    g.followingTrain,
+		"My Next Train":      g.myTrain,
+		"My Following Train": g.myFollowingTrain,
+		"Save My Stop":       g.saveMyStopAction,
+		"Next Train":         g.nextTrain,
+		"Following Train":    g.followingTrain,
 	}
 }
 
