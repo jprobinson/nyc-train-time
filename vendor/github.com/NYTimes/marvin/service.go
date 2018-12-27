@@ -79,7 +79,7 @@ type MixedService interface {
 //				Decoder:  decodeGetCatsRequest,
 //			},
 //		},
-//  }
+//	}
 //
 type JSONEndpointer interface {
 	JSONEndpoints() map[string]map[string]HTTPEndpoint
@@ -99,14 +99,14 @@ type JSONEndpointer interface {
 //		"/cats.proto": {
 //			"PUT": {
 //				Endpoint: s.PutCats,
-//				Decoder:  decodePutCatsProtoRequest,
+//				Decoder:  decodePutCatsRequest,
 //			},
 //			"GET": {
 //				Endpoint: s.GetCats,
 //				Decoder:  decodeGetCatsRequest,
 //			},
 //		},
-//  }
+//	}
 //
 type ProtoEndpointer interface {
 	ProtoEndpoints() map[string]map[string]HTTPEndpoint

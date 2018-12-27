@@ -9,15 +9,15 @@ import (
 	"github.com/jprobinson/gosubway"
 )
 
-func (s *googleService) getNextTrainDialog(ctx context.Context, ft gosubway.FeedType, line, stop, dir string) string {
+func (s *service) getNextTrainDialog(ctx context.Context, ft gosubway.FeedType, line, stop, dir string) string {
 	return s.getTrainDialog(ctx, ft, "next", line, stop, dir, 0)
 }
 
-func (s *googleService) getFollowingTrainDialog(ctx context.Context, ft gosubway.FeedType, line, stop, dir string) string {
+func (s *service) getFollowingTrainDialog(ctx context.Context, ft gosubway.FeedType, line, stop, dir string) string {
 	return s.getTrainDialog(ctx, ft, "following", line, stop, dir, 1)
 }
 
-func (s *googleService) getTrainDialog(ctx context.Context, ft gosubway.FeedType, name, line, stop, dir string, indx int) string {
+func (s *service) getTrainDialog(ctx context.Context, ft gosubway.FeedType, name, line, stop, dir string, indx int) string {
 	feed, err := getFeed(ctx, s.key, ft)
 	if err != nil {
 		return fmt.Sprintf("Sorry, I'm having problems getting the subway feed. ")

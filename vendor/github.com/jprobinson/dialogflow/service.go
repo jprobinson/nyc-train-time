@@ -1,30 +1,33 @@
-// A Google App Engine framework for building services that respond to DialogFlow actions.
+// Package dialogflow is a framework for building services that respond to DialogFlow
+// fulfillment webhooks.
 package dialogflow
 
 import (
 	"context"
 	"net/http"
 
-	"github.com/NYTimes/marvin"
+	"github.com/NYTimes/gizmo/server/kit"
 	"github.com/go-kit/kit/endpoint"
 	httptransport "github.com/go-kit/kit/transport/http"
+	"google.golang.org/grpc"
 )
 
 type service struct {
-	google     map[string]GoogleActionHandler
+	intents    map[string]IntentHandler
 	middleware endpoint.Middleware
 }
 
-// Init will register a service with marvin and Google App Engine.
-// Call this in your init function or main function just before appengine.Main.
+// Run will register a service with kit and run the server. Call this in your main
+// function.
 //
-// The service will register the webhook on the path "/google" so make sure to configure
-// your fulfillment webhook to point at something like https://example.com/google
-func Init(google GoogleActionService, middleware endpoint.Middleware) {
-	marvin.Init(&service{google: google.Actions(), middleware: middleware})
+// The service will register the webhook on the path "/fulfillment" so make sure to
+// configure your fulfillment webhook to point at something like:
+// https://example.appspot.com/fulfillment
+func Run(svc FulfillmentService) error {
+	return kit.Run(&service{intents: svc.Intents(), middleware: svc.Middleware})
 }
 
-func (s *service) Options() []httptransport.ServerOption {
+func (s *service) HTTPOptions() []httptransport.ServerOption {
 	return []httptransport.ServerOption{
 		httptransport.ServerErrorEncoder(func(ctx context.Context, err error, w http.ResponseWriter) {
 			httptransport.EncodeJSONResponse(ctx, w, err)
@@ -32,8 +35,8 @@ func (s *service) Options() []httptransport.ServerOption {
 	}
 }
 
-func (s *service) RouterOptions() []marvin.RouterOption {
-	return []marvin.RouterOption{marvin.RouterSelect("stdlib")}
+func (s *service) HTTPRouterOptions() []kit.RouterOption {
+	return []kit.RouterOption{kit.RouterSelect("stdlib")}
 }
 
 func (s *service) HTTPMiddleware(h http.Handler) http.Handler {
@@ -41,22 +44,31 @@ func (s *service) HTTPMiddleware(h http.Handler) http.Handler {
 }
 
 func (s *service) Middleware(ep endpoint.Endpoint) endpoint.Endpoint {
-	if s.middleware != nil {
-		return s.middleware(ep)
-	}
-	return ep
+	return s.middleware(ep)
 }
 
-func (s *service) JSONEndpoints() map[string]map[string]marvin.HTTPEndpoint {
-	return map[string]map[string]marvin.HTTPEndpoint{
-		"/google": {
+func (s *service) HTTPEndpoints() map[string]map[string]kit.HTTPEndpoint {
+	return map[string]map[string]kit.HTTPEndpoint{
+		"/fulfillment": {
 			"POST": {
-				Endpoint: s.postGoogle,
-				Decoder:  decodeGoogle,
+				Endpoint: s.post,
+				Decoder:  decode,
 			},
 		},
 	}
 }
 
-var errBadRequest = marvin.NewJSONStatusResponse(map[string]string{
+var errBadRequest = kit.NewJSONStatusResponse(map[string]string{
 	"error": "bad request"}, http.StatusBadRequest)
+
+func (s *service) RPCMiddleware() grpc.UnaryServerInterceptor {
+	return nil
+}
+
+func (s *service) RPCServiceDesc() *grpc.ServiceDesc {
+	return nil
+}
+
+func (s *service) RPCOptions() []grpc.ServerOption {
+	return nil
+}
