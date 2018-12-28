@@ -147,21 +147,20 @@ google.golang.org/api/transport/http
 google.golang.org/api/googleapi/transport
 google.golang.org/api/transport/http/internal/propagation
 # google.golang.org/appengine v1.4.0
-google.golang.org/appengine/datastore
 google.golang.org/appengine
 google.golang.org/appengine/log
 google.golang.org/appengine/module
 google.golang.org/appengine/urlfetch
-google.golang.org/appengine/internal
-google.golang.org/appengine/internal/datastore
 google.golang.org/appengine/socket
+google.golang.org/appengine/internal
 google.golang.org/appengine/internal/app_identity
 google.golang.org/appengine/internal/modules
 google.golang.org/appengine/internal/log
 google.golang.org/appengine/internal/urlfetch
-google.golang.org/appengine/internal/base
-google.golang.org/appengine/internal/remote_api
 google.golang.org/appengine/internal/socket
+google.golang.org/appengine/internal/base
+google.golang.org/appengine/internal/datastore
+google.golang.org/appengine/internal/remote_api
 # google.golang.org/genproto v0.0.0-20181127195345-31ac5d88444a
 google.golang.org/genproto/googleapis/datastore/v1
 google.golang.org/genproto/googleapis/type/latlng

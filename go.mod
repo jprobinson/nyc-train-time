@@ -10,6 +10,6 @@ require (
 	github.com/jprobinson/gtfs v0.0.0-20181215184543-d9558d240410 // indirect
 	golang.org/x/oauth2 v0.0.0-20181203162652-d668ce993890 // indirect
 	google.golang.org/api v0.0.0-20181221000618-65a46cafb132 // indirect
-	google.golang.org/appengine v1.4.0
+	google.golang.org/appengine v1.4.0 // indirect
 	google.golang.org/grpc v1.17.0 // indirect
 )

@@ -9,8 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"google.golang.org/appengine/datastore"
-
+	"cloud.google.com/go/datastore"
 	"github.com/NYTimes/gizmo/server/kit"
 	"github.com/NYTimes/marvin"
 	"github.com/go-kit/kit/endpoint"
