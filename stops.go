@@ -349,7 +349,7 @@ var stopNameToID = map[string]map[string]string{
 	"Bedford Park Boulevard Lehman College": {
 		"4": "405",
 	},
-	"42nd Street Bryant Pk": {
+	"42nd Street Bryant Park": {
 		"B": "D16",
 		"D": "D16",
 		"F": "D16",
