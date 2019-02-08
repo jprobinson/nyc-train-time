@@ -11,6 +11,8 @@ pipeline:
     image: plugins/gcr
     registry: gcr.io
     repo: wheresthetrain-nyc/bot
+    context: ./cmd/server
+    dockerfile: cmd/server/Dockerfile
     tag: "${DRONE_COMMIT}"
     json_key:
       from_secret: google_credentials
