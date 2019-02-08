@@ -425,7 +425,7 @@ var stopNameToID = map[string]map[string]string{
 	"62nd Street": {
 		"D": "B16",
 	},
-	"Cortelyou Rd": {
+	"Cortelyou Road": {
 		"Q": "D30",
 	},
 	"3rd Avenue 138th Street": {
