@@ -1,0 +1,37 @@
+pipeline:
+  build-server:
+    image: golang:1.11
+    commands:
+      - make build
+    when:
+      event: push
+      branch: [master]
+
+  publish-server-image:
+    image: plugins/gcr
+    registry: gcr.io
+    repo: wheresthetrain-nyc/bot
+    tag: "${DRONE_COMMIT}"
+    json_key:
+      from_secret: google_credentials
+    when:
+      branch: [master]
+      event: push
+
+  deploy:
+    image: nytimes/drone-gae
+    action: deploy
+    project: wheresthetrain-nyc
+    dir: cmd/server
+    app_file: app.yaml
+    addl_args: '{ "--image-url": "gcr.io/wheresthetrain-nyc/bot:${DRONE_COMMIT}" }'
+    version: "${DRONE_COMMIT}"
+    vars: '{ "KEY": "$$MTA_KEY" }'
+    secrets:
+      - source: google_credentials
+        target: GAE_CREDENTIALS
+      - source: mta_key
+        target: MTA_KEY
+    when:
+      branch: [master]
+      event: push
