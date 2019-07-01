@@ -80,6 +80,8 @@ var goodbyes = []string{
 	"Have a good ride!",
 	"Have a save trip!",
 	"Save travels!",
+	"Toodles!",
+	"Until next time!",
 }
 
 func (s *service) myTrain(ctx context.Context, r *dialogflow.Request) (*dialogflow.FulfillmentResponse, error) {
