@@ -8,8 +8,9 @@ import (
 	"time"
 
 	"github.com/NYTimes/gizmo/server/kit"
-	"github.com/NYTimes/marvin"
-	"github.com/jprobinson/gosubway"
+
+	"github.com/jprobinson/gtfs/mta"
+	"github.com/jprobinson/gtfs/transit_realtime"
 )
 
 const (
@@ -19,9 +20,9 @@ const (
 )
 
 // retries until it hits max attempts or a context timeout
-func getFeed(ctx context.Context, key string, ft gosubway.FeedType) (*gosubway.FeedMessage, error) {
+func getFeed(ctx context.Context, hc *http.Client, key string, ft mta.FeedType) (*transit_realtime.FeedMessage, error) {
 	var (
-		feed *gosubway.FeedMessage
+		feed *transit_realtime.FeedMessage
 		err  error
 	)
 
@@ -32,7 +33,7 @@ func getFeed(ctx context.Context, key string, ft gosubway.FeedType) (*gosubway.F
 		// retry backoff
 		time.Sleep(time.Duration((attempt - 1)) * backoffStep)
 		// attempt to get feed
-		feed, err = gosubway.GetFeed(ctx, key, ft)
+		feed, err = mta.GetNYCSubwayFeed(ctx, hc, key, ft)
 		if err == nil ||
 			(err != nil && strings.Contains(err.Error(), "deadline exceeded")) {
 			break
@@ -42,30 +43,30 @@ func getFeed(ctx context.Context, key string, ft gosubway.FeedType) (*gosubway.F
 	return feed, err
 }
 
-func parseFeed(line string) (gosubway.FeedType, error) {
-	var ft gosubway.FeedType
+func parseFeed(line string) (mta.FeedType, error) {
+	var ft mta.FeedType
 	switch line {
 	case "1", "2", "3", "4", "5", "6":
-		ft = gosubway.NumberedFeed
+		ft = mta.NumberedFeed
 	case "N", "Q", "R", "W":
-		ft = gosubway.YellowFeed
+		ft = mta.YellowFeed
 	case "B", "D", "F", "M":
-		ft = gosubway.OrangeFeed
+		ft = mta.OrangeFeed
 	case "A", "C", "E":
-		ft = gosubway.BlueFeed
+		ft = mta.BlueFeed
 	case "J", "Z":
-		ft = gosubway.BrownFeed
+		ft = mta.BrownFeed
 	case "L":
-		ft = gosubway.LFeed
+		ft = mta.LFeed
 	case "7":
-		ft = gosubway.SevenFeed
+		ft = mta.SevenFeed
 	case "G":
-		ft = gosubway.GFeed
+		ft = mta.GFeed
 	default:
-		return gosubway.LFeed, errBadRequest
+		return mta.LFeed, errBadRequest
 	}
 	return ft, nil
 }
 
-var errBadRequest = marvin.NewJSONStatusResponse(map[string]string{
+var errBadRequest = kit.NewJSONStatusResponse(map[string]string{
 	"error": "bad request"}, http.StatusBadRequest)

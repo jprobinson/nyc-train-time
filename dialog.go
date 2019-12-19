@@ -6,24 +6,25 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/jprobinson/gosubway"
+	"github.com/jprobinson/gtfs"
+	"github.com/jprobinson/gtfs/mta"
 )
 
-func (s *service) getNextTrainDialog(ctx context.Context, ft gosubway.FeedType, line, stop, dir string) string {
+func (s *service) getNextTrainDialog(ctx context.Context, ft mta.FeedType, line, stop, dir string) string {
 	return s.getTrainDialog(ctx, ft, "next", line, stop, dir, 0)
 }
 
-func (s *service) getFollowingTrainDialog(ctx context.Context, ft gosubway.FeedType, line, stop, dir string) string {
+func (s *service) getFollowingTrainDialog(ctx context.Context, ft mta.FeedType, line, stop, dir string) string {
 	return s.getTrainDialog(ctx, ft, "following", line, stop, dir, 1)
 }
 
-func (s *service) getTrainDialog(ctx context.Context, ft gosubway.FeedType, name, line, stop, dir string, indx int) string {
-	feed, err := getFeed(ctx, s.key, ft)
+func (s *service) getTrainDialog(ctx context.Context, ft mta.FeedType, name, line, stop, dir string, indx int) string {
+	feed, err := getFeed(ctx, s.hc, s.key, ft)
 	if err != nil {
 		return fmt.Sprintf("Sorry, I'm having problems getting the subway feed. ")
 	}
 
-	stopLine, ok := stopNameToID[stop]
+	stopLine, ok := gtfs.NYCSubwayStopsByName[stop]
 	if !ok {
 		return fmt.Sprintf("Sorry, I didn't recognise the stop \"%s\". ", stop)
 	}
@@ -34,10 +35,10 @@ func (s *service) getTrainDialog(ctx context.Context, ft gosubway.FeedType, name
 			stop, line)
 	}
 
-	_, north, south := feed.NextTrainTimes(stopID, line)
+	_, north, south := mta.FeedNextTrainTimes(feed, stopID, line)
 
 	var trains []time.Time
-	if trainDirs[line]["northbound"] == dir || dir == "uptown" || dir == "Northbound" {
+	if gtfs.NYCSubwayRoutes[line].Northbound == dir || dir == "uptown" || dir == "Northbound" {
 		trains = north
 	} else {
 		trains = south

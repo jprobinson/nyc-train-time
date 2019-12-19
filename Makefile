@@ -10,7 +10,7 @@ deploy-local: build
 	docker build  --tag gcr.io/wheresthetrain-nyc/nyc-train-time:local .; say -v Samantha "image built\!";
 	@docker push gcr.io/wheresthetrain-nyc/nyc-train-time:local; say -v Samantha "image pushed\!";
 	@cd cmd/server; \
-	gcloud app deploy ./app.yaml --version "local-`date +'%s'`"  --image-url gcr.io/wheresthetrain-nyc/nyc-train-time:local --project wheresthetrain-nyc --quiet; say -v Samantha "deployed\!";
+	gcloud app deploy ./prd.yaml --version "local-`date +'%s'`"  --image-url gcr.io/wheresthetrain-nyc/nyc-train-time:local --project wheresthetrain-nyc --quiet; say -v Samantha "deployed\!";
 	@rm cmd/server/server;
 
 # Ensures Go modules is enabled and updates vendor directory with any missing deps.
