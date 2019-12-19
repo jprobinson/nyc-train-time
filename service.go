@@ -93,11 +93,15 @@ var goodbyes = []string{
 func (s *service) myTrain(ctx context.Context, r *dialogflow.Request) (*dialogflow.FulfillmentResponse, error) {
 	uid := r.OriginalDetectIntentRequest.Payload.User.UserID
 	if uid == "" {
+		return simpleResponse(
+			"It looks like you aren't logged in yet. Please link your account with the Google Assistant.")
 	}
 	mys, err := s.db.getMyStop(ctx, uid)
 	if err == datastore.ErrNoSuchEntity {
-		return simpleResponse(
-			"It looks like you haven't saved your personalized subway stop yet! Ask NYC Train Time to \"save my stop\" to create or update your stop.")
+		return &dialogflow.FulfillmentResponse{
+			FollowupEventInput: &dialogflow.EventInput{Name: "save_stop"},
+			Source:             source,
+		}, nil
 	}
 	if err != nil {
 		kit.LogErrorMsg(ctx, err, "unable to get my stops")
@@ -123,8 +127,10 @@ func (s *service) myFollowingTrain(ctx context.Context, r *dialogflow.Request) (
 	}
 	mys, err := s.db.getMyStop(ctx, uid)
 	if err == datastore.ErrNoSuchEntity {
-		return simpleResponse(
-			"It looks like you haven't saved your personalized subway stop yet! Ask NYC Train Time to \"save my stop\" to create or update your stop.")
+		return &dialogflow.FulfillmentResponse{
+			FollowupEventInput: &dialogflow.EventInput{Name: "save_stop"},
+			Source:             source,
+		}, nil
 	}
 	if err != nil {
 		kit.LogErrorMsg(ctx, err, "unable to get my stop")
@@ -159,9 +165,16 @@ func (s *service) saveMyStopAction(ctx context.Context, r *dialogflow.Request) (
 			"error": "unable to complete request: " + err.Error(),
 		}, http.StatusInternalServerError)
 	}
-	return simpleResponse(fmt.Sprintf(
-		"Successfully saved your stop, %s bound %s trains at %s. To update your stop again, ask NYC Train Time to \"save my stop\". ",
-		dir, line, stop))
+
+	ft, err := parseFeed(line)
+	if err != nil {
+		kit.LogMsg(ctx, "unable to parse line: "+line)
+		return simpleResponse(
+			fmt.Sprintf("sorry, the %s line is not available yet", line))
+	}
+
+	return simpleResponse("Successfully saved your stop. " +
+		s.getNextTrainDialog(ctx, ft, line, stop, dir))
 }
 
 func (g *service) nextTrain(ctx context.Context, r *dialogflow.Request) (*dialogflow.FulfillmentResponse, error) {
