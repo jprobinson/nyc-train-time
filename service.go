@@ -19,6 +19,7 @@ import (
 type service struct {
 	key string
 	db  *db
+	hc  *http.Client
 }
 
 func NewService() (dialogflow.FulfillmentService, error) {
@@ -28,7 +29,11 @@ func NewService() (dialogflow.FulfillmentService, error) {
 	if err != nil {
 		return nil, err
 	}
-	return &service{key: os.Getenv("MTA_KEY"), db: db}, nil
+	return &service{
+		key: os.Getenv("MTA_KEY"),
+		db:  db,
+		hc:  &http.Client{Timeout: 2 * time.Second},
+	}, nil
 }
 
 func (g *service) Intents() map[string]dialogflow.IntentHandler {
@@ -48,6 +53,7 @@ func (s *service) Middleware(ep endpoint.Endpoint) endpoint.Endpoint {
 		//call our action
 		re, err := ep(ctx, r)
 		if err != nil {
+			kit.LogErrorMsg(ctx, err, "encountered an error")
 			return re, err
 		}
 
@@ -87,7 +93,6 @@ var goodbyes = []string{
 func (s *service) myTrain(ctx context.Context, r *dialogflow.Request) (*dialogflow.FulfillmentResponse, error) {
 	uid := r.OriginalDetectIntentRequest.Payload.User.UserID
 	if uid == "" {
-		return simpleResponse("Sorry, you need to be logged in for that to work")
 	}
 	mys, err := s.db.getMyStop(ctx, uid)
 	if err == datastore.ErrNoSuchEntity {

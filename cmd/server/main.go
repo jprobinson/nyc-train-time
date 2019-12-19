@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+	"os"
 
 	"github.com/jprobinson/dialogflow"
 	nyctraintime "github.com/jprobinson/nyc-train-time"
@@ -13,7 +14,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	err = dialogflow.Run(svc)
+	err = dialogflow.Run(svc, os.Getenv("AUDIENCE"))
 	if err != nil {
 		log.Fatal(err)
 	}

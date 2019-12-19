@@ -1,14 +1,19 @@
-pipeline:
-  build-server:
-    image: golang:1.11
-    commands:
-      - make build
-    when:
-      event: push
-      branch: [master]
+---
+kind: pipeline
+type: docker
+name: default
 
-  publish-server-image:
-    image: plugins/gcr
+steps:
+- name: build-server
+  image: golang:1.13
+  commands:
+  - make build
+  when:
+    event: push
+
+- name: publish-server-image
+  image: plugins/gcr
+  settings:
     registry: gcr.io
     repo: wheresthetrain-nyc/bot
     context: ./cmd/server
@@ -20,8 +25,9 @@ pipeline:
       branch: [master]
       event: push
 
-  deploy:
-    image: nytimes/drone-gae
+- name: deploy
+  image: nytimes/drone-gae
+  settings:
     action: deploy
     project: wheresthetrain-nyc
     dir: cmd/server
@@ -29,11 +35,11 @@ pipeline:
     addl_args: '{ "--image-url": "gcr.io/wheresthetrain-nyc/bot:${DRONE_COMMIT}" }'
     version: "${DRONE_COMMIT}"
     vars: '{ "KEY": "$$MTA_KEY" }'
-    secrets:
-      - source: google_credentials
-        target: GAE_CREDENTIALS
-      - source: mta_key
-        target: MTA_KEY
+  environment:
+    GAE_CREDENTIALS:
+      from_secret: google_credentials
+    MTA_KEY:
+      from_secret: mta_key
     when:
       branch: [master]
       event: push

@@ -1,4 +1,4 @@
-runtime: go111
+runtime: go112
 service: bot
 
 inbound_services:
@@ -6,3 +6,4 @@ inbound_services:
 
 env_variables:
   MTA_KEY: {{ .KEY }}
+  AUDIENCE: "177057427162-hjtehg1s3umgct81ttm82hac6l2dj4e0.apps.googleusercontent.com"
