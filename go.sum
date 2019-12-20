@@ -128,6 +128,8 @@ github.com/jprobinson/dialogflow v1.0.1-0.20191219194421-2a75342ddbfa h1:2sQr32u
 github.com/jprobinson/dialogflow v1.0.1-0.20191219194421-2a75342ddbfa/go.mod h1:DSwJgrWW3vmigy2yKV6jlPCmhv1EcNaVVmbqUAEvoss=
 github.com/jprobinson/gtfs v0.0.0-20191219172205-cda2cb5fad2d h1:vC98myNmmiMDkU6I79WacfVXEZBUISn7lAlO/7dW16w=
 github.com/jprobinson/gtfs v0.0.0-20191219172205-cda2cb5fad2d/go.mod h1:73BVqBB6BVV2qJWOZP5bleDNy7blKRqSzcMgR9pvbxY=
+github.com/jprobinson/gtfs v0.0.0-20191220000701-96b6abb83f6c h1:GQMWgwmEiVInKOp72129fbgdxH0cuhJStvs4Zl/YtLQ=
+github.com/jprobinson/gtfs v0.0.0-20191220000701-96b6abb83f6c/go.mod h1:73BVqBB6BVV2qJWOZP5bleDNy7blKRqSzcMgR9pvbxY=
 github.com/jstemmer/go-junit-report v0.0.0-20190106144839-af01ea7f8024 h1:rBMNdlhTLzJjJSDIjNEXX1Pz3Hmwmz91v+zycvx9PJc=
 github.com/jstemmer/go-junit-report v0.0.0-20190106144839-af01ea7f8024/go.mod h1:6v2b51hI/fHJwM22ozAgKL4VKDeJcHhJFhtBdhmNjmU=
 github.com/kelseyhightower/envconfig v1.3.0 h1:IvRS4f2VcIQy6j4ORGIf9145T/AsUB+oY8LyvN8BXNM=
