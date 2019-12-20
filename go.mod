@@ -16,7 +16,7 @@ require (
 	github.com/gorilla/mux v1.7.3 // indirect
 	github.com/grpc-ecosystem/go-grpc-middleware v1.1.0 // indirect
 	github.com/jprobinson/dialogflow v1.0.1-0.20191219194421-2a75342ddbfa
-	github.com/jprobinson/gtfs v0.0.0-20191220000701-96b6abb83f6c
+	github.com/jprobinson/gtfs v0.0.0-20191220001050-b303232254b0
 	github.com/kelseyhightower/envconfig v1.4.0 // indirect
 	go.opencensus.io v0.22.2 // indirect
 	golang.org/x/net v0.0.0-20191209160850-c0dbc17a3553 // indirect
