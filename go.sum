@@ -126,6 +126,8 @@ github.com/jprobinson/dialogflow v1.0.1-0.20191219194037-503ddd8b5b2b h1:ZK8pyhi
 github.com/jprobinson/dialogflow v1.0.1-0.20191219194037-503ddd8b5b2b/go.mod h1:DSwJgrWW3vmigy2yKV6jlPCmhv1EcNaVVmbqUAEvoss=
 github.com/jprobinson/dialogflow v1.0.1-0.20191219194421-2a75342ddbfa h1:2sQr32u3GQmkOz7y5yqeEgXNeJlO0GfhGXM9mb5xZ0g=
 github.com/jprobinson/dialogflow v1.0.1-0.20191219194421-2a75342ddbfa/go.mod h1:DSwJgrWW3vmigy2yKV6jlPCmhv1EcNaVVmbqUAEvoss=
+github.com/jprobinson/dialogflow v1.0.1-0.20191220173321-16e1c48f153f h1:lW9XdB8zp4d6DKj7aqwvq+FpML13ASJ5AVJulZy+68A=
+github.com/jprobinson/dialogflow v1.0.1-0.20191220173321-16e1c48f153f/go.mod h1:DSwJgrWW3vmigy2yKV6jlPCmhv1EcNaVVmbqUAEvoss=
 github.com/jprobinson/gtfs v0.0.0-20191219172205-cda2cb5fad2d h1:vC98myNmmiMDkU6I79WacfVXEZBUISn7lAlO/7dW16w=
 github.com/jprobinson/gtfs v0.0.0-20191219172205-cda2cb5fad2d/go.mod h1:73BVqBB6BVV2qJWOZP5bleDNy7blKRqSzcMgR9pvbxY=
 github.com/jprobinson/gtfs v0.0.0-20191220000701-96b6abb83f6c h1:GQMWgwmEiVInKOp72129fbgdxH0cuhJStvs4Zl/YtLQ=
