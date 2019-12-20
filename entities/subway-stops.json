@@ -1,2288 +1,2516 @@
 [
-    {
-        "value": "182th-183th Streets",
-        "synonyms": [
-            "182th-183th Streets"
-        ]
-    },
-    {
-        "value": "Saint George",
-        "synonyms": [
-            "Saint George"
-        ]
-    },
-    {
-        "value": "Forest Hills 71st Avenue",
-        "synonyms": [
-            "Forest Hills 71st Avenue"
-        ]
-    },
-    {
-        "value": "Huguenot",
-        "synonyms": [
-            "Huguenot"
-        ]
-    },
-    {
-        "value": "New Lots Avenue",
-        "synonyms": [
-            "New Lots Avenue"
-        ]
-    },
-    {
-        "value": "Buhre Avenue",
-        "synonyms": [
-            "Buhre Avenue"
-        ]
-    },
-    {
-        "value": "Dongan Hills",
-        "synonyms": [
-            "Dongan Hills"
-        ]
-    },
-    {
-        "value": "Bay Terrace",
-        "synonyms": [
-            "Bay Terrace"
-        ]
-    },
-    {
-        "value": "Burnside Avenue",
-        "synonyms": [
-            "Burnside Avenue"
-        ]
-    },
-    {
-        "value": "Tompkinsville",
-        "synonyms": [
-            "Tompkinsville"
-        ]
-    },
-    {
-        "value": "Ralph Avenue",
-        "synonyms": [
-            "Ralph Avenue"
-        ]
-    },
-    {
-        "value": "Grand Army Plaza",
-        "synonyms": [
-            "Grand Army Plaza"
-        ]
-    },
-    {
-        "value": "59th Street Columbus Circle",
-        "synonyms": [
-            "59th Street Columbus Circle"
-        ]
-    },
-    {
-        "value": "Far Rockaway Mott Avenue",
-        "synonyms": [
-            "Far Rockaway Mott Avenue"
-        ]
-    },
-    {
-        "value": "Middletown Road",
-        "synonyms": [
-            "Middletown Road"
-        ]
-    },
-    {
-        "value": "135th Street",
-        "synonyms": [
-            "135th Street"
-        ]
-    },
-    {
-        "value": "Hunters Point Avenue",
-        "synonyms": [
-            "Hunters Point Avenue"
-        ]
-    },
-    {
-        "value": "S.B. Coney Island",
-        "synonyms": [
-            "S.B. Coney Island"
-        ]
-    },
-    {
-        "value": "Oakwood Heights",
-        "synonyms": [
-            "Oakwood Heights"
-        ]
-    },
-    {
-        "value": "Beach 44th Street",
-        "synonyms": [
-            "Beach 44th Street"
-        ]
-    },
-    {
-        "value": "18th Avenue",
-        "synonyms": [
-            "18th Avenue"
-        ]
-    },
-    {
-        "value": "Franklin Avenue",
-        "synonyms": [
-            "Franklin Avenue"
-        ]
-    },
-    {
-        "value": "Hoyt Street",
-        "synonyms": [
-            "Hoyt Street"
-        ]
-    },
-    {
-        "value": "Jackson Heights Roosevelt Avenue",
-        "synonyms": [
-            "Jackson Heights Roosevelt Avenue",
-            "Roosevelt Avenue"
-        ]
-    },
-    {
-        "value": "Bay Ridge 95th Street",
-        "synonyms": [
-            "Bay Ridge 95th Street"
-        ]
-    },
-    {
-        "value": "Grand Street",
-        "synonyms": [
-            "Grand Street"
-        ]
-    },
-    {
-        "value": "Junius Street",
-        "synonyms": [
-            "Junius Street"
-        ]
-    },
-    {
-        "value": "Franklin Street",
-        "synonyms": [
-            "Franklin Street"
-        ]
-    },
-    {
-        "value": "Harlem 148th Street",
-        "synonyms": [
-            "Harlem 148th Street"
-        ]
-    },
-    {
-        "value": "25th Avenue",
-        "synonyms": [
-            "25th Avenue"
-        ]
-    },
-    {
-        "value": "Bronx Park East",
-        "synonyms": [
-            "Bronx Park East"
-        ]
-    },
-    {
-        "value": "Union Street",
-        "synonyms": [
-            "Union Street"
-        ]
-    },
-    {
-        "value": "West 4th Street",
-        "synonyms": [
-            "West 4th Street"
-        ]
-    },
-    {
-        "value": "Ocean Parkway",
-        "synonyms": [
-            "Ocean Parkway"
-        ]
-    },
-    {
-        "value": "Winthrop Street",
-        "synonyms": [
-            "Winthrop Street"
-        ]
-    },
-    {
-        "value": "Times Square 42nd Street",
-        "synonyms": [
-            "Times Square 42nd Street"
-        ]
-    },
-    {
-        "value": "South Ferry",
-        "synonyms": [
-            "South Ferry"
-        ]
-    },
-    {
-        "value": "71st Street",
-        "synonyms": [
-            "71st Street"
-        ]
-    },
-    {
-        "value": "Van Cortlandt Park 242nd Street",
-        "synonyms": [
-            "Van Cortlandt Park 242nd Street"
-        ]
-    },
-    {
-        "value": "Middle Village Metropolitan Avenue",
-        "synonyms": [
-            "Middle Village Metropolitan Avenue"
-        ]
-    },
-    {
-        "value": "Ditmas Avenue",
-        "synonyms": [
-            "Ditmas Avenue"
-        ]
-    },
-    {
-        "value": "Burke Avenue",
-        "synonyms": [
-            "Burke Avenue"
-        ]
-    },
-    {
-        "value": "104th Street",
-        "synonyms": [
-            "104th Street"
-        ]
-    },
-    {
-        "value": "Mets Willets Point",
-        "synonyms": [
-            "Mets Willets Point"
-        ]
-    },
-    {
-        "value": "Bergen Street",
-        "synonyms": [
-            "Bergen Street"
-        ]
-    },
-    {
-        "value": "West Farms Square East Tremont Avenue",
-        "synonyms": [
-            "West Farms Square East Tremont Avenue"
-        ]
-    },
-    {
-        "value": "Sutter Avenue Rutland Road",
-        "synonyms": [
-            "Sutter Avenue Rutland Road"
-        ]
-    },
-    {
-        "value": "Crown Heights Utica Avenue",
-        "synonyms": [
-            "Crown Heights Utica Avenue"
-        ]
-    },
-    {
-        "value": "Cathedral Parkway",
-        "synonyms": [
-            "Cathedral Parkway"
-        ]
-    },
-    {
-        "value": "175th Street",
-        "synonyms": [
-            "175th Street"
-        ]
-    },
-    {
-        "value": "Utica Avenue",
-        "synonyms": [
-            "Utica Avenue"
-        ]
-    },
-    {
-        "value": "Newkirk Plaza",
-        "synonyms": [
-            "Newkirk Plaza"
-        ]
-    },
-    {
-        "value": "Cathedral Parkway ,110th Street",
-        "synonyms": [
-            "Cathedral Parkway ,110th Street",
-            "Cathedral Parkway ",
-            "110th Street"
-        ]
-    },
-    {
-        "value": "Gates Avenue",
-        "synonyms": [
-            "Gates Avenue"
-        ]
-    },
-    {
-        "value": "Bowling Green",
-        "synonyms": [
-            "Bowling Green"
-        ]
-    },
-    {
-        "value": "City Hall",
-        "synonyms": [
-            "City Hall"
-        ]
-    },
-    {
-        "value": "Botanic Garden",
-        "synonyms": [
-            "Botanic Garden"
-        ]
-    },
-    {
-        "value": "Dyckman Street",
-        "synonyms": [
-            "Dyckman Street"
-        ]
-    },
-    {
-        "value": "Myrtle Wyckoff Avenues",
-        "synonyms": [
-            "Myrtle Wyckoff Avenues"
-        ]
-    },
-    {
-        "value": "Bedford Nostrand Avenues",
-        "synonyms": [
-            "Bedford Nostrand Avenues"
-        ]
-    },
-    {
-        "value": "Mosholu Parkway",
-        "synonyms": [
-            "Mosholu Parkway"
-        ]
-    },
-    {
-        "value": "163rd Street Amsterdam Avenue",
-        "synonyms": [
-            "163rd Street Amsterdam Avenue"
-        ]
-    },
-    {
-        "value": "2nd Avenue",
-        "synonyms": [
-            "2nd Avenue"
-        ]
-    },
-    {
-        "value": "Bay Parkway",
-        "synonyms": [
-            "Bay Parkway"
-        ]
-    },
-    {
-        "value": "Pennsylvania Avenue",
-        "synonyms": [
-            "Pennsylvania Avenue"
-        ]
-    },
-    {
-        "value": "Saint Lawrence Avenue",
-        "synonyms": [
-            "Saint Lawrence Avenue"
-        ]
-    },
-    {
-        "value": "York Street",
-        "synonyms": [
-            "York Street"
-        ]
-    },
-    {
-        "value": "Coney Island Stillwell Avenue",
-        "synonyms": [
-            "Coney Island Stillwell Avenue"
-        ]
-    },
-    {
-        "value": "14th Street",
-        "synonyms": [
-            "14th Street"
-        ]
-    },
-    {
-        "value": "Aqueduct Racetrack",
-        "synonyms": [
-            "Aqueduct Racetrack"
-        ]
-    },
-    {
-        "value": "Castle Hill Avenue",
-        "synonyms": [
-            "Castle Hill Avenue"
-        ]
-    },
-    {
-        "value": "Montrose Avenue",
-        "synonyms": [
-            "Montrose Avenue"
-        ]
-    },
-    {
-        "value": "Seneca Avenue",
-        "synonyms": [
-            "Seneca Avenue"
-        ]
-    },
-    {
-        "value": "Euclid Avenue",
-        "synonyms": [
-            "Euclid Avenue"
-        ]
-    },
-    {
-        "value": "Elder Avenue",
-        "synonyms": [
-            "Elder Avenue"
-        ]
-    },
-    {
-        "value": "79th Street",
-        "synonyms": [
-            "79th Street"
-        ]
-    },
-    {
-        "value": "Myrtle Avenue",
-        "synonyms": [
-            "Myrtle Avenue"
-        ]
-    },
-    {
-        "value": "Essex Street",
-        "synonyms": [
-            "Essex Street"
-        ]
-    },
-    {
-        "value": "57th Street 7th Avenue",
-        "synonyms": [
-            "57th Street 7th Avenue"
-        ]
-    },
-    {
-        "value": "Broadway Junction",
-        "synonyms": [
-            "Broadway Junction"
-        ]
-    },
-    {
-        "value": "176th Street",
-        "synonyms": [
-            "176th Street"
-        ]
-    },
-    {
-        "value": "75th Avenue",
-        "synonyms": [
-            "75th Avenue"
-        ]
-    },
-    {
-        "value": "Beverly Road",
-        "synonyms": [
-            "Beverly Road"
-        ]
-    },
-    {
-        "value": "Beach 67th Street",
-        "synonyms": [
-            "Beach 67th Street"
-        ]
-    },
-    {
-        "value": "34th Street Penn Station",
-        "synonyms": [
-            "34th Street Penn Station"
-        ]
-    },
-    {
-        "value": "Lafayette Avenue",
-        "synonyms": [
-            "Lafayette Avenue"
-        ]
-    },
-    {
-        "value": "59th Street",
-        "synonyms": [
-            "59th Street"
-        ]
-    },
-    {
-        "value": "238th Street",
-        "synonyms": [
-            "238th Street"
-        ]
-    },
-    {
-        "value": "74th Street Broadway",
-        "synonyms": [
-            "74th Street Broadway"
-        ]
-    },
-    {
-        "value": "Brooklyn Bridge City Hall",
-        "synonyms": [
-            "Brooklyn Bridge City Hall"
-        ]
-    },
-    {
-        "value": "63 Dr Rego Park",
-        "synonyms": [
-            "63 Dr Rego Park"
-        ]
-    },
-    {
-        "value": "Woodhaven Boulevard",
-        "synonyms": [
-            "Woodhaven Boulevard"
-        ]
-    },
-    {
-        "value": "Parsons Boulevard",
-        "synonyms": [
-            "Parsons Boulevard"
-        ]
-    },
-    {
-        "value": "Stapleton",
-        "synonyms": [
-            "Stapleton"
-        ]
-    },
-    {
-        "value": "Allerton Avenue",
-        "synonyms": [
-            "Allerton Avenue"
-        ]
-    },
-    {
-        "value": "Eastern Parkway Brooklyn Museum",
-        "synonyms": [
-            "Eastern Parkway Brooklyn Museum"
-        ]
-    },
-    {
-        "value": "Norwood Avenue",
-        "synonyms": [
-            "Norwood Avenue"
-        ]
-    },
-    {
-        "value": "Livonia Avenue",
-        "synonyms": [
-            "Livonia Avenue"
-        ]
-    },
-    {
-        "value": "Court Street",
-        "synonyms": [
-            "Court Street"
-        ]
-    },
-    {
-        "value": "15th Street Prospect Park",
-        "synonyms": [
-            "15th Street Prospect Park"
-        ]
-    },
-    {
-        "value": "Westchester Square East Tremont Avenue",
-        "synonyms": [
-            "Westchester Square East Tremont Avenue"
-        ]
-    },
-    {
-        "value": "Cortelyou Road",
-        "synonyms": [
-            "Cortelyou Road"
-        ]
-    },
-    {
-        "value": "Prince's Bay",
-        "synonyms": [
-            "Prince's Bay"
-        ]
-    },
-    {
-        "value": "East 149th Street",
-        "synonyms": [
-            "East 149th Street"
-        ]
-    },
-    {
-        "value": "President Street",
-        "synonyms": [
-            "President Street"
-        ]
-    },
-    {
-        "value": "Nevins Street",
-        "synonyms": [
-            "Nevins Street"
-        ]
-    },
-    {
-        "value": "Fordham Road",
-        "synonyms": [
-            "Fordham Road"
-        ]
-    },
-    {
-        "value": "145th Street",
-        "synonyms": [
-            "145th Street"
-        ]
-    },
-    {
-        "value": "155th Street",
-        "synonyms": [
-            "155th Street"
-        ]
-    },
-    {
-        "value": "Simpson Street",
-        "synonyms": [
-            "Simpson Street"
-        ]
-    },
-    {
-        "value": "East 143rd Street Saint Mary's Street",
-        "synonyms": [
-            "East 143rd Street Saint Mary's Street"
-        ]
-    },
-    {
-        "value": "21st Street Queensbridge",
-        "synonyms": [
-            "21st Street Queensbridge"
-        ]
-    },
-    {
-        "value": "Richmond Valley",
-        "synonyms": [
-            "Richmond Valley"
-        ]
-    },
-    {
-        "value": "Pleasant Plains",
-        "synonyms": [
-            "Pleasant Plains"
-        ]
-    },
-    {
-        "value": "Flushing Avenue",
-        "synonyms": [
-            "Flushing Avenue"
-        ]
-    },
-    {
-        "value": "Clark Street",
-        "synonyms": [
-            "Clark Street"
-        ]
-    },
-    {
-        "value": "DeKalb Avenue",
-        "synonyms": [
-            "DeKalb Avenue"
-        ]
-    },
-    {
-        "value": "169th Street",
-        "synonyms": [
-            "169th Street"
-        ]
-    },
-    {
-        "value": "Woodside 61st Street",
-        "synonyms": [
-            "Woodside 61st Street"
-        ]
-    },
-    {
-        "value": "34th Street 11st Avenue",
-        "synonyms": [
-            "34th Street 11st Avenue"
-        ]
-    },
-    {
-        "value": "233rd Street",
-        "synonyms": [
-            "233rd Street"
-        ]
-    },
-    {
-        "value": "Gun Hill Road",
-        "synonyms": [
-            "Gun Hill Road"
-        ]
-    },
-    {
-        "value": "Wilson Avenue",
-        "synonyms": [
-            "Wilson Avenue"
-        ]
-    },
-    {
-        "value": "72nd Street",
-        "synonyms": [
-            "72nd Street"
-        ]
-    },
-    {
-        "value": "49th Street",
-        "synonyms": [
-            "49th Street"
-        ]
-    },
-    {
-        "value": "50th Street",
-        "synonyms": [
-            "50th Street"
-        ]
-    },
-    {
-        "value": "36th Avenue",
-        "synonyms": [
-            "36th Avenue"
-        ]
-    },
-    {
-        "value": "190th Street",
-        "synonyms": [
-            "190th Street"
-        ]
-    },
-    {
-        "value": "Pelham Bay Park",
-        "synonyms": [
-            "Pelham Bay Park"
-        ]
-    },
-    {
-        "value": "Kingston Avenue",
-        "synonyms": [
-            "Kingston Avenue"
-        ]
-    },
-    {
-        "value": "Eltingville",
-        "synonyms": [
-            "Eltingville"
-        ]
-    },
-    {
-        "value": "Brighton Beach",
-        "synonyms": [
-            "Brighton Beach"
-        ]
-    },
-    {
-        "value": "Baychester Avenue",
-        "synonyms": [
-            "Baychester Avenue"
-        ]
-    },
-    {
-        "value": "Sutter Avenue",
-        "synonyms": [
-            "Sutter Avenue"
-        ]
-    },
-    {
-        "value": "40th Street",
-        "synonyms": [
-            "40th Street"
-        ]
-    },
-    {
-        "value": "Beach 25th Street",
-        "synonyms": [
-            "Beach 25th Street"
-        ]
-    },
-    {
-        "value": "Chauncey Street",
-        "synonyms": [
-            "Chauncey Street"
-        ]
-    },
-    {
-        "value": "Shepherd Avenue",
-        "synonyms": [
-            "Shepherd Avenue"
-        ]
-    },
-    {
-        "value": "88th Street",
-        "synonyms": [
-            "88th Street"
-        ]
-    },
-    {
-        "value": "Bedford Avenue",
-        "synonyms": [
-            "Bedford Avenue"
-        ]
-    },
-    {
-        "value": "Sutphin Boulevard",
-        "synonyms": [
-            "Sutphin Boulevard"
-        ]
-    },
-    {
-        "value": "81st Street Museum of Natural History",
-        "synonyms": [
-            "81st Street Museum of Natural History"
-        ]
-    },
-    {
-        "value": "Junction Boulevard",
-        "synonyms": [
-            "Junction Boulevard"
-        ]
-    },
-    {
-        "value": "Marcy Avenue",
-        "synonyms": [
-            "Marcy Avenue"
-        ]
-    },
-    {
-        "value": "191st Street",
-        "synonyms": [
-            "191st Street"
-        ]
-    },
-    {
-        "value": "Liberty Avenue",
-        "synonyms": [
-            "Liberty Avenue"
-        ]
-    },
-    {
-        "value": "Grasmere",
-        "synonyms": [
-            "Grasmere"
-        ]
-    },
-    {
-        "value": "Delancey Street",
-        "synonyms": [
-            "Delancey Street"
-        ]
-    },
-    {
-        "value": "52nd Street",
-        "synonyms": [
-            "52nd Street"
-        ]
-    },
-    {
-        "value": "168th Street",
-        "synonyms": [
-            "168th Street"
-        ]
-    },
-    {
-        "value": "Chambers Street",
-        "synonyms": [
-            "Chambers Street"
-        ]
-    },
-    {
-        "value": "Arthur Kill",
-        "synonyms": [
-            "Arthur Kill"
-        ]
-    },
-    {
-        "value": "53rd Street",
-        "synonyms": [
-            "53rd Street"
-        ]
-    },
-    {
-        "value": "8th Street NYU",
-        "synonyms": [
-            "8th Street NYU"
-        ]
-    },
-    {
-        "value": "Roosevelt Island",
-        "synonyms": [
-            "Roosevelt Island"
-        ]
-    },
-    {
-        "value": "42nd Street Port Authority Bus Terminal",
-        "synonyms": [
-            "42nd Street Port Authority Bus Terminal"
-        ]
-    },
-    {
-        "value": "Rector Street",
-        "synonyms": [
-            "Rector Street"
-        ]
-    },
-    {
-        "value": "Cypress Hills",
-        "synonyms": [
-            "Cypress Hills"
-        ]
-    },
-    {
-        "value": "Old Town",
-        "synonyms": [
-            "Old Town"
-        ]
-    },
-    {
-        "value": "157th Street",
-        "synonyms": [
-            "157th Street"
-        ]
-    },
-    {
-        "value": "34th Street Herald Square",
-        "synonyms": [
-            "34th Street Herald Square"
-        ]
-    },
-    {
-        "value": "Grand Central 42nd Street",
-        "synonyms": [
-            "Grand Central 42nd Street"
-        ]
-    },
-    {
-        "value": "Pelham Parkway",
-        "synonyms": [
-            "Pelham Parkway"
-        ]
-    },
-    {
-        "value": "Nassau Avenue",
-        "synonyms": [
-            "Nassau Avenue"
-        ]
-    },
-    {
-        "value": "170th Street",
-        "synonyms": [
-            "170th Street"
-        ]
-    },
-    {
-        "value": "Greenpoint Avenue",
-        "synonyms": [
-            "Greenpoint Avenue"
-        ]
-    },
-    {
-        "value": "Bowery",
-        "synonyms": [
-            "Bowery"
-        ]
-    },
-    {
-        "value": "Christopher Street Sheridan Square",
-        "synonyms": [
-            "Christopher Street Sheridan Square"
-        ]
-    },
-    {
-        "value": "Fresh Pond Road",
-        "synonyms": [
-            "Fresh Pond Road"
-        ]
-    },
-    {
-        "value": "Morris Park",
-        "synonyms": [
-            "Morris Park"
-        ]
-    },
-    {
-        "value": "121st Street",
-        "synonyms": [
-            "121st Street"
-        ]
-    },
-    {
-        "value": "30th Avenue",
-        "synonyms": [
-            "30th Avenue"
-        ]
-    },
-    {
-        "value": "75th Street",
-        "synonyms": [
-            "75th Street"
-        ]
-    },
-    {
-        "value": "Kew Gardens Union Turnpike",
-        "synonyms": [
-            "Kew Gardens Union Turnpike"
-        ]
-    },
-    {
-        "value": "Canal Street",
-        "synonyms": [
-            "Canal Street"
-        ]
-    },
-    {
-        "value": "5th Avenue/53rd Street",
-        "synonyms": [
-            "5th Avenue/53rd Street"
-        ]
-    },
-    {
-        "value": "Grant City",
-        "synonyms": [
-            "Grant City"
-        ]
-    },
-    {
-        "value": "Bay Ridge Avenue",
-        "synonyms": [
-            "Bay Ridge Avenue"
-        ]
-    },
-    {
-        "value": "51st Street",
-        "synonyms": [
-            "51st Street"
-        ]
-    },
-    {
-        "value": "Hunts Point Avenue",
-        "synonyms": [
-            "Hunts Point Avenue"
-        ]
-    },
-    {
-        "value": "Annadale",
-        "synonyms": [
-            "Annadale"
-        ]
-    },
-    {
-        "value": "Mt Eden Avenue",
-        "synonyms": [
-            "Mt Eden Avenue"
-        ]
-    },
-    {
-        "value": "231st Street",
-        "synonyms": [
-            "231st Street"
-        ]
-    },
-    {
-        "value": "Bedford Park Boulevard Lehman College",
-        "synonyms": [
-            "Bedford Park Boulevard Lehman College"
-        ]
-    },
-    {
-        "value": "Alabama Avenue",
-        "synonyms": [
-            "Alabama Avenue"
-        ]
-    },
-    {
-        "value": "Jay Street MetroTech",
-        "synonyms": [
-            "Jay Street MetroTech"
-        ]
-    },
-    {
-        "value": "168th Street Washington Heights",
-        "synonyms": [
-            "168th Street Washington Heights"
-        ]
-    },
-    {
-        "value": "Broad Street",
-        "synonyms": [
-            "Broad Street"
-        ]
-    },
-    {
-        "value": "207th Street",
-        "synonyms": [
-            "207th Street"
-        ]
-    },
-    {
-        "value": "55th Street",
-        "synonyms": [
-            "55th Street"
-        ]
-    },
-    {
-        "value": "Cleveland Street",
-        "synonyms": [
-            "Cleveland Street"
-        ]
-    },
-    {
-        "value": "Northern Boulevard",
-        "synonyms": [
-            "Northern Boulevard"
-        ]
-    },
-    {
-        "value": "68th Street Hunter College",
-        "synonyms": [
-            "68th Street Hunter College"
-        ]
-    },
-    {
-        "value": "Grand Avenue Newtown",
-        "synonyms": [
-            "Grand Avenue Newtown"
-        ]
-    },
-    {
-        "value": "Jackson Avenue",
-        "synonyms": [
-            "Jackson Avenue"
-        ]
-    },
-    {
-        "value": "Astoria Ditmars Boulevard",
-        "synonyms": [
-            "Astoria Ditmars Boulevard"
-        ]
-    },
-    {
-        "value": "Freeman Street",
-        "synonyms": [
-            "Freeman Street"
-        ]
-    },
-    {
-        "value": "World Trade Center",
-        "synonyms": [
-            "World Trade Center"
-        ]
-    },
-    {
-        "value": "Newkirk Avenue",
-        "synonyms": [
-            "Newkirk Avenue"
-        ]
-    },
-    {
-        "value": "Eastchester Dyre Avenue",
-        "synonyms": [
-            "Eastchester Dyre Avenue"
-        ]
-    },
-    {
-        "value": "Kingston Throop Avenues",
-        "synonyms": [
-            "Kingston Throop Avenues"
-        ]
-    },
-    {
-        "value": "57th Street",
-        "synonyms": [
-            "57th Street"
-        ]
-    },
-    {
-        "value": "7th Avenue",
-        "synonyms": [
-            "7th Avenue"
-        ]
-    },
-    {
-        "value": "Rockaway Boulevard",
-        "synonyms": [
-            "Rockaway Boulevard"
-        ]
-    },
-    {
-        "value": "Jefferson Street",
-        "synonyms": [
-            "Jefferson Street"
-        ]
-    },
-    {
-        "value": "Sutphin Boulevard Archer Avenue JFK Airport",
-        "synonyms": [
-            "Sutphin Boulevard Archer Avenue JFK Airport"
-        ]
-    },
-    {
-        "value": "25th Street",
-        "synonyms": [
-            "25th Street"
-        ]
-    },
-    {
-        "value": "Broadway",
-        "synonyms": [
-            "Broadway"
-        ]
-    },
-    {
-        "value": "Prospect Park",
-        "synonyms": [
-            "Prospect Park"
-        ]
-    },
-    {
-        "value": "Tremont Avenue",
-        "synonyms": [
-            "Tremont Avenue"
-        ]
-    },
-    {
-        "value": "Wakefield 241st Street",
-        "synonyms": [
-            "Wakefield 241st Street"
-        ]
-    },
-    {
-        "value": "Astor Pl",
-        "synonyms": [
-            "Astor Pl"
-        ]
-    },
-    {
-        "value": "Houston Street",
-        "synonyms": [
-            "Houston Street"
-        ]
-    },
-    {
-        "value": "Howard Beach JFK Airport",
-        "synonyms": [
-            "Howard Beach JFK Airport"
-        ]
-    },
-    {
-        "value": "Inwood 207th Street",
-        "synonyms": [
-            "Inwood 207th Street"
-        ]
-    },
-    {
-        "value": "Prince Street",
-        "synonyms": [
-            "Prince Street"
-        ]
-    },
-    {
-        "value": "New Utrecht Avenue",
-        "synonyms": [
-            "New Utrecht Avenue"
-        ]
-    },
-    {
-        "value": "High Street",
-        "synonyms": [
-            "High Street"
-        ]
-    },
-    {
-        "value": "47th-50th Streets Rockefeller Center",
-        "synonyms": [
-            "47th-50th Streets Rockefeller Center",
-            "Rockefeller Center"
-        ]
-    },
-    {
-        "value": "42nd Street Bryant Park",
-        "synonyms": [
-            "42nd Street Bryant Park"
-        ]
-    },
-    {
-        "value": "Fort Hamilton Parkway",
-        "synonyms": [
-            "Fort Hamilton Parkway"
-        ]
-    },
-    {
-        "value": "Church Avenue",
-        "synonyms": [
-            "Church Avenue"
-        ]
-    },
-    {
-        "value": "80th Street",
-        "synonyms": [
-            "80th Street"
-        ]
-    },
-    {
-        "value": "Parkchester",
-        "synonyms": [
-            "Parkchester"
-        ]
-    },
-    {
-        "value": "161st Street Yankee Stadium",
-        "synonyms": [
-            "161st Street Yankee Stadium"
-        ]
-    },
-    {
-        "value": "Nereid Avenue",
-        "synonyms": [
-            "Nereid Avenue"
-        ]
-    },
-    {
-        "value": "Flatbush Avenue Brooklyn College",
-        "synonyms": [
-            "Flatbush Avenue Brooklyn College"
-        ]
-    },
-    {
-        "value": "225th Street",
-        "synonyms": [
-            "225th Street"
-        ]
-    },
-    {
-        "value": "Elmhurst Avenue",
-        "synonyms": [
-            "Elmhurst Avenue"
-        ]
-    },
-    {
-        "value": "Canarsie Rockaway Parkway",
-        "synonyms": [
-            "Canarsie Rockaway Parkway"
-        ]
-    },
-    {
-        "value": "215th Street",
-        "synonyms": [
-            "215th Street"
-        ]
-    },
-    {
-        "value": "67th Avenue",
-        "synonyms": [
-            "67th Avenue"
-        ]
-    },
-    {
-        "value": "Tottenville",
-        "synonyms": [
-            "Tottenville"
-        ]
-    },
-    {
-        "value": "167th Street",
-        "synonyms": [
-            "167th Street"
-        ]
-    },
-    {
-        "value": "Spring Street",
-        "synonyms": [
-            "Spring Street"
-        ]
-    },
-    {
-        "value": "Beach 60th Street",
-        "synonyms": [
-            "Beach 60th Street"
-        ]
-    },
-    {
-        "value": "3rd Avenue 149th Street",
-        "synonyms": [
-            "3rd Avenue 149th Street"
-        ]
-    },
-    {
-        "value": "East 180th Street",
-        "synonyms": [
-            "East 180th Street"
-        ]
-    },
-    {
-        "value": "East 105th Street",
-        "synonyms": [
-            "East 105th Street"
-        ]
-    },
-    {
-        "value": "Prospect Avenue",
-        "synonyms": [
-            "Prospect Avenue"
-        ]
-    },
-    {
-        "value": "Myrtle Willoughby Avenues",
-        "synonyms": [
-            "Myrtle Willoughby Avenues"
-        ]
-    },
-    {
-        "value": "Zerega Avenue",
-        "synonyms": [
-            "Zerega Avenue"
-        ]
-    },
-    {
-        "value": "Hoyt Schermerhorn Streets",
-        "synonyms": [
-            "Hoyt Schermerhorn Streets"
-        ]
-    },
-    {
-        "value": "65th Street",
-        "synonyms": [
-            "65th Street"
-        ]
-    },
-    {
-        "value": "3rd Avenue",
-        "synonyms": [
-            "3rd Avenue"
-        ]
-    },
-    {
-        "value": "Hewes Street",
-        "synonyms": [
-            "Hewes Street"
-        ]
-    },
-    {
-        "value": "Graham Avenue",
-        "synonyms": [
-            "Graham Avenue"
-        ]
-    },
-    {
-        "value": "1st Avenue",
-        "synonyms": [
-            "1st Avenue"
-        ]
-    },
-    {
-        "value": "Bushwick Avenue Aberdeen Street",
-        "synonyms": [
-            "Bushwick Avenue Aberdeen Street"
-        ]
-    },
-    {
-        "value": "3rd Avenue 138th Street",
-        "synonyms": [
-            "3rd Avenue 138th Street"
-        ]
-    },
-    {
-        "value": "Brook Avenue",
-        "synonyms": [
-            "Brook Avenue"
-        ]
-    },
-    {
-        "value": "Nassau",
-        "synonyms": [
-            "Nassau"
-        ]
-    },
-    {
-        "value": "Avenue X",
-        "synonyms": [
-            "Avenue X"
-        ]
-    },
-    {
-        "value": "Parkside Avenue",
-        "synonyms": [
-            "Parkside Avenue"
-        ]
-    },
-    {
-        "value": "New Dorp",
-        "synonyms": [
-            "New Dorp"
-        ]
-    },
-    {
-        "value": "103rd Street Corona Plaza",
-        "synonyms": [
-            "103rd Street Corona Plaza"
-        ]
-    },
-    {
-        "value": "Lexington Avenue/63rd Street",
-        "synonyms": [
-            "Lexington Avenue/63rd Street"
-        ]
-    },
-    {
-        "value": "116th Street Columbia University",
-        "synonyms": [
-            "116th Street Columbia University"
-        ]
-    },
-    {
-        "value": "Kings Highway",
-        "synonyms": [
-            "Kings Highway"
-        ]
-    },
-    {
-        "value": "Avenue P",
-        "synonyms": [
-            "Avenue P"
-        ]
-    },
-    {
-        "value": "Metropolitan Avenue",
-        "synonyms": [
-            "Metropolitan Avenue"
-        ]
-    },
-    {
-        "value": "33rd Street",
-        "synonyms": [
-            "33rd Street"
-        ]
-    },
-    {
-        "value": "Lexington Avenue/53rd Street",
-        "synonyms": [
-            "Lexington Avenue/53rd Street"
-        ]
-    },
-    {
-        "value": "Central Park North ,110th Street",
-        "synonyms": [
-            "Central Park North ,110th Street",
-            "110th Street",
-            "Central Park North "
-        ]
-    },
-    {
-        "value": "Longwood Avenue",
-        "synonyms": [
-            "Longwood Avenue"
-        ]
-    },
-    {
-        "value": "111st Street",
-        "synonyms": [
-            "111st Street"
-        ]
-    },
-    {
-        "value": "Morgan Avenue",
-        "synonyms": [
-            "Morgan Avenue"
-        ]
-    },
-    {
-        "value": "Atlantic Avenue",
-        "synonyms": [
-            "Atlantic Avenue"
-        ]
-    },
-    {
-        "value": "Grant Avenue",
-        "synonyms": [
-            "Grant Avenue"
-        ]
-    },
-    {
-        "value": "Steinway Street",
-        "synonyms": [
-            "Steinway Street"
-        ]
-    },
-    {
-        "value": "Whitlock Avenue",
-        "synonyms": [
-            "Whitlock Avenue"
-        ]
-    },
-    {
-        "value": "8th Avenue",
-        "synonyms": [
-            "8th Avenue"
-        ]
-    },
-    {
-        "value": "Morrison Avenue- Sound View",
-        "synonyms": [
-            "Morrison Avenue- Sound View"
-        ]
-    },
-    {
-        "value": "Briarwood Van Wyck Boulevard",
-        "synonyms": [
-            "Briarwood Van Wyck Boulevard"
-        ]
-    },
-    {
-        "value": "Classon Avenue",
-        "synonyms": [
-            "Classon Avenue"
-        ]
-    },
-    {
-        "value": "Borough Hall",
-        "synonyms": [
-            "Borough Hall"
-        ]
-    },
-    {
-        "value": "103rd Street",
-        "synonyms": [
-            "103rd Street"
-        ]
-    },
-    {
-        "value": "77th Street",
-        "synonyms": [
-            "77th Street"
-        ]
-    },
-    {
-        "value": "85th Street Forest Parkway",
-        "synonyms": [
-            "85th Street Forest Parkway"
-        ]
-    },
-    {
-        "value": "Great Kills",
-        "synonyms": [
-            "Great Kills"
-        ]
-    },
-    {
-        "value": "23rd Street",
-        "synonyms": [
-            "23rd Street"
-        ]
-    },
-    {
-        "value": "36th Street",
-        "synonyms": [
-            "36th Street"
-        ]
-    },
-    {
-        "value": "Wall Street",
-        "synonyms": [
-            "Wall Street"
-        ]
-    },
-    {
-        "value": "Beach 105th Street",
-        "synonyms": [
-            "Beach 105th Street"
-        ]
-    },
-    {
-        "value": "Beach 98th Street",
-        "synonyms": [
-            "Beach 98th Street"
-        ]
-    },
-    {
-        "value": "137th Street City College",
-        "synonyms": [
-            "137th Street City College"
-        ]
-    },
-    {
-        "value": "Beverley Road",
-        "synonyms": [
-            "Beverley Road"
-        ]
-    },
-    {
-        "value": "110th Street",
-        "synonyms": [
-            "110th Street"
-        ]
-    },
-    {
-        "value": "138th Street Grand Concourse",
-        "synonyms": [
-            "138th Street Grand Concourse"
-        ]
-    },
-    {
-        "value": "Whitehall Street",
-        "synonyms": [
-            "Whitehall Street"
-        ]
-    },
-    {
-        "value": "9th Avenue",
-        "synonyms": [
-            "9th Avenue"
-        ]
-    },
-    {
-        "value": "Kingsbridge Road",
-        "synonyms": [
-            "Kingsbridge Road"
-        ]
-    },
-    {
-        "value": "Vernon Boulevard Jackson Avenue",
-        "synonyms": [
-            "Vernon Boulevard Jackson Avenue"
-        ]
-    },
-    {
-        "value": "Woodlawn",
-        "synonyms": [
-            "Woodlawn"
-        ]
-    },
-    {
-        "value": "96th Street",
-        "synonyms": [
-            "96th Street"
-        ]
-    },
-    {
-        "value": "4th Avenue",
-        "synonyms": [
-            "4th Avenue"
-        ]
-    },
-    {
-        "value": "62nd Street",
-        "synonyms": [
-            "62nd Street"
-        ]
-    },
-    {
-        "value": "14th Street Union Square",
-        "synonyms": [
-            "14th Street Union Square"
-        ]
-    },
-    {
-        "value": "82nd Street Jackson Heights",
-        "synonyms": [
-            "82nd Street Jackson Heights"
-        ]
-    },
-    {
-        "value": "Kosciuszko Street",
-        "synonyms": [
-            "Kosciuszko Street"
-        ]
-    },
-    {
-        "value": "6th Avenue",
-        "synonyms": [
-            "6th Avenue"
-        ]
-    },
-    {
-        "value": "Sterling Street",
-        "synonyms": [
-            "Sterling Street"
-        ]
-    },
-    {
-        "value": "219th Street",
-        "synonyms": [
-            "219th Street"
-        ]
-    },
-    {
-        "value": "Halsey Street",
-        "synonyms": [
-            "Halsey Street"
-        ]
-    },
-    {
-        "value": "174th Street",
-        "synonyms": [
-            "174th Street"
-        ]
-    },
-    {
-        "value": "149th Street Grand Concourse",
-        "synonyms": [
-            "149th Street Grand Concourse"
-        ]
-    },
-    {
-        "value": "Knickerbocker Avenue",
-        "synonyms": [
-            "Knickerbocker Avenue"
-        ]
-    },
-    {
-        "value": "Court Square",
-        "synonyms": [
-            "Court Square"
-        ]
-    },
-    {
-        "value": "174th-175th Streets",
-        "synonyms": [
-            "174th-175th Streets"
-        ]
-    },
-    {
-        "value": "Smith 9th Streets",
-        "synonyms": [
-            "Smith 9th Streets"
-        ]
-    },
-    {
-        "value": "Lexington Avenue/59th Street",
-        "synonyms": [
-            "Lexington Avenue/59th Street"
-        ]
-    },
-    {
-        "value": "Lorimer Street",
-        "synonyms": [
-            "Lorimer Street"
-        ]
-    },
-    {
-        "value": "Cypress Avenue",
-        "synonyms": [
-            "Cypress Avenue"
-        ]
-    },
-    {
-        "value": "Sheepshead Bay",
-        "synonyms": [
-            "Sheepshead Bay"
-        ]
-    },
-    {
-        "value": "21st Street",
-        "synonyms": [
-            "21st Street"
-        ]
-    },
-    {
-        "value": "181st Street",
-        "synonyms": [
-            "181st Street"
-        ]
-    },
-    {
-        "value": "Central Avenue",
-        "synonyms": [
-            "Central Avenue"
-        ]
-    },
-    {
-        "value": "86th Street",
-        "synonyms": [
-            "86th Street"
-        ]
-    },
-    {
-        "value": "Broadway-Lafayette Street",
-        "synonyms": [
-            "Broadway-Lafayette Street"
-        ]
-    },
-    {
-        "value": "Saratoga Avenue",
-        "synonyms": [
-            "Saratoga Avenue"
-        ]
-    },
-    {
-        "value": "Neptune Avenue",
-        "synonyms": [
-            "Neptune Avenue"
-        ]
-    },
-    {
-        "value": "116th Street",
-        "synonyms": [
-            "116th Street"
-        ]
-    },
-    {
-        "value": "Van Siclen Avenue",
-        "synonyms": [
-            "Van Siclen Avenue"
-        ]
-    },
-    {
-        "value": "9th Street",
-        "synonyms": [
-            "9th Street"
-        ]
-    },
-    {
-        "value": "Queens Plaza",
-        "synonyms": [
-            "Queens Plaza"
-        ]
-    },
-    {
-        "value": "Forest Avenue",
-        "synonyms": [
-            "Forest Avenue"
-        ]
-    },
-    {
-        "value": "Rockaway Park Beach 116th Street",
-        "synonyms": [
-            "Rockaway Park Beach 116th Street"
-        ]
-    },
-    {
-        "value": "5th Avenue/59th Street",
-        "synonyms": [
-            "5th Avenue/59th Street"
-        ]
-    },
-    {
-        "value": "28th Street",
-        "synonyms": [
-            "28th Street"
-        ]
-    },
-    {
-        "value": "45th Street",
-        "synonyms": [
-            "45th Street"
-        ]
-    },
-    {
-        "value": "Nostrand Avenue",
-        "synonyms": [
-            "Nostrand Avenue"
-        ]
-    },
-    {
-        "value": "Beach 90th Street",
-        "synonyms": [
-            "Beach 90th Street"
-        ]
-    },
-    {
-        "value": "Flushing Main Street",
-        "synonyms": [
-            "Flushing Main Street"
-        ]
-    },
-    {
-        "value": "Intervale Avenue",
-        "synonyms": [
-            "Intervale Avenue"
-        ]
-    },
-    {
-        "value": "5th Avenue",
-        "synonyms": [
-            "5th Avenue"
-        ]
-    },
-    {
-        "value": "Neck Road",
-        "synonyms": [
-            "Neck Road"
-        ]
-    },
-    {
-        "value": "Bleecker Street",
-        "synonyms": [
-            "Bleecker Street"
-        ]
-    },
-    {
-        "value": "Jamaica 179th Street",
-        "synonyms": [
-            "Jamaica 179th Street"
-        ]
-    },
-    {
-        "value": "Jefferson Avenue",
-        "synonyms": [
-            "Jefferson Avenue"
-        ]
-    },
-    {
-        "value": "Jamaica Van Wyck",
-        "synonyms": [
-            "Jamaica Van Wyck"
-        ]
-    },
-    {
-        "value": "39th Avenue",
-        "synonyms": [
-            "39th Avenue"
-        ]
-    },
-    {
-        "value": "Bay 50th Street",
-        "synonyms": [
-            "Bay 50th Street"
-        ]
-    },
-    {
-        "value": "Norwood 205th Street",
-        "synonyms": [
-            "Norwood 205th Street"
-        ]
-    },
-    {
-        "value": "Broad Channel",
-        "synonyms": [
-            "Broad Channel"
-        ]
-    },
-    {
-        "value": "Queensboro Plaza",
-        "synonyms": [
-            "Queensboro Plaza"
-        ]
-    },
-    {
-        "value": "Aqueduct N Conduit Avenue",
-        "synonyms": [
-            "Aqueduct N Conduit Avenue"
-        ]
-    },
-    {
-        "value": "Astoria Boulevard",
-        "synonyms": [
-            "Astoria Boulevard"
-        ]
-    },
-    {
-        "value": "East Broadway",
-        "synonyms": [
-            "East Broadway"
-        ]
-    },
-    {
-        "value": "Atlantic",
-        "synonyms": [
-            "Atlantic"
-        ]
-    },
-    {
-        "value": "Jamaica Center Parsons/Archer",
-        "synonyms": [
-            "Jamaica Center Parsons/Archer"
-        ]
-    },
-    {
-        "value": "18th Street",
-        "synonyms": [
-            "18th Street"
-        ]
-    },
-    {
-        "value": "Beach 36th Street",
-        "synonyms": [
-            "Beach 36th Street"
-        ]
-    },
-    {
-        "value": "Clinton Washington Avenues",
-        "synonyms": [
-            "Clinton Washington Avenues"
-        ]
-    },
-    {
-        "value": "Cortlandt Street",
-        "synonyms": [
-            "Cortlandt Street"
-        ]
-    },
-    {
-        "value": "Avenue U",
-        "synonyms": [
-            "Avenue U"
-        ]
-    },
-    {
-        "value": "125th Street",
-        "synonyms": [
-            "125th Street"
-        ]
-    },
-    {
-        "value": "Carroll Street",
-        "synonyms": [
-            "Carroll Street"
-        ]
-    },
-    {
-        "value": "Avenue I",
-        "synonyms": [
-            "Avenue I"
-        ]
-    },
-    {
-        "value": "Avenue H",
-        "synonyms": [
-            "Avenue H"
-        ]
-    },
-    {
-        "value": "Rockaway Avenue",
-        "synonyms": [
-            "Rockaway Avenue"
-        ]
-    },
-    {
-        "value": "Avenue J",
-        "synonyms": [
-            "Avenue J"
-        ]
-    },
-    {
-        "value": "Avenue M",
-        "synonyms": [
-            "Avenue M"
-        ]
-    },
-    {
-        "value": "Avenue N",
-        "synonyms": [
-            "Avenue N"
-        ]
-    },
-    {
-        "value": "Bedford Park Boulevard",
-        "synonyms": [
-            "Bedford Park Boulevard"
-        ]
-    },
-    {
-        "value": "Fulton Street",
-        "synonyms": [
-            "Fulton Street"
-        ]
-    },
-    {
-        "value": "20th Avenue",
-        "synonyms": [
-            "20th Avenue"
-        ]
-    },
-    {
-        "value": "West 8th Street NY Aquarium",
-        "synonyms": [
-            "West 8th Street NY Aquarium"
-        ]
-    },
-    {
-        "value": "Ozone Park Lefferts Boulevard",
-        "synonyms": [
-            "Ozone Park Lefferts Boulevard"
-        ]
-    },
-    {
-        "value": "66th Street Lincoln Center",
-        "synonyms": [
-            "66th Street Lincoln Center"
-        ]
-    },
-    {
-        "value": "183rd Street",
-        "synonyms": [
-            "183rd Street"
-        ]
-    },
-    {
-        "value": "Park Pl",
-        "synonyms": [
-            "Park Pl"
-        ]
-    },
-    {
-        "value": "Atlantic Avenue Barclays Ctr",
-        "synonyms": [
-            "Atlantic Avenue Barclays Ctr"
-        ]
-    },
-    {
-        "value": "46th Street",
-        "synonyms": [
-            "46th Street"
-        ]
-    },
-    {
-        "value": "Clifton",
-        "synonyms": [
-            "Clifton"
-        ]
-    },
-    {
-        "value": "Union Square 14th Street",
-        "synonyms": [
-            "Union Square 14th Street"
-        ]
-    },
-    {
-        "value": "69th Street",
-        "synonyms": [
-            "69th Street"
-        ]
-    },
-    {
-        "value": "90th Street Elmhurst Avenue",
-        "synonyms": [
-            "90th Street Elmhurst Avenue"
-        ]
-    },
-    {
-        "value": "Marble Hill 225th Street",
-        "synonyms": [
-            "Marble Hill 225th Street"
-        ]
-    },
-    {
-        "value": "South Ferry Loop",
-        "synonyms": [
-            "South Ferry Loop"
-        ]
-    },
-    {
-        "value": "Crescent Street",
-        "synonyms": [
-            "Crescent Street"
-        ]
-    }
+  {
+    "value": "103rd Street",
+    "synonyms": [
+      "103rd Street"
+    ]
+  },
+  {
+    "value": "103rd Street, Corona Plaza",
+    "synonyms": [
+      "103rd Street",
+      "Corona Plaza",
+      "Corona Plaza, 103rd Street"
+    ]
+  },
+  {
+    "value": "104th Street",
+    "synonyms": [
+      "104th Street"
+    ]
+  },
+  {
+    "value": "110th Street",
+    "synonyms": [
+      "110th Street"
+    ]
+  },
+  {
+    "value": "111st Street",
+    "synonyms": [
+      "111st Street"
+    ]
+  },
+  {
+    "value": "116th Street",
+    "synonyms": [
+      "116th Street"
+    ]
+  },
+  {
+    "value": "116th Street, Columbia University",
+    "synonyms": [
+      "116th Street",
+      "Columbia University",
+      "Columbia University, 116th Street"
+    ]
+  },
+  {
+    "value": "121st Street",
+    "synonyms": [
+      "121st Street"
+    ]
+  },
+  {
+    "value": "125th Street",
+    "synonyms": [
+      "125th Street"
+    ]
+  },
+  {
+    "value": "135th Street",
+    "synonyms": [
+      "135th Street"
+    ]
+  },
+  {
+    "value": "137th Street, City College",
+    "synonyms": [
+      "137th Street",
+      "City College",
+      "City College, 137th Street"
+    ]
+  },
+  {
+    "value": "138th Street, Grand Concourse",
+    "synonyms": [
+      "138th Street",
+      "Grand Concourse",
+      "Grand Concourse, 138th Street"
+    ]
+  },
+  {
+    "value": "145th Street",
+    "synonyms": [
+      "145th Street"
+    ]
+  },
+  {
+    "value": "149th Street, Grand Concourse",
+    "synonyms": [
+      "149th Street",
+      "Grand Concourse",
+      "Grand Concourse, 149th Street"
+    ]
+  },
+  {
+    "value": "14th Street",
+    "synonyms": [
+      "14th Street"
+    ]
+  },
+  {
+    "value": "14th Street, Union Square",
+    "synonyms": [
+      "14th Street",
+      "Union Square",
+      "Union Square, 14th Street"
+    ]
+  },
+  {
+    "value": "155th Street",
+    "synonyms": [
+      "155th Street"
+    ]
+  },
+  {
+    "value": "157th Street",
+    "synonyms": [
+      "157th Street"
+    ]
+  },
+  {
+    "value": "15th Street, Prospect Park",
+    "synonyms": [
+      "15th Street",
+      "Prospect Park",
+      "Prospect Park, 15th Street"
+    ]
+  },
+  {
+    "value": "161st Street, Yankee Stadium",
+    "synonyms": [
+      "161st Street",
+      "Yankee Stadium",
+      "Yankee Stadium, 161st Street"
+    ]
+  },
+  {
+    "value": "163rd Street, Amsterdam Avenue",
+    "synonyms": [
+      "163rd Street",
+      "Amsterdam Avenue",
+      "Amsterdam Avenue, 163rd Street"
+    ]
+  },
+  {
+    "value": "167th Street",
+    "synonyms": [
+      "167th Street"
+    ]
+  },
+  {
+    "value": "168th Street",
+    "synonyms": [
+      "168th Street"
+    ]
+  },
+  {
+    "value": "168th Street, Washington Heights",
+    "synonyms": [
+      "168th Street",
+      "Washington Heights",
+      "Washington Heights, 168th Street"
+    ]
+  },
+  {
+    "value": "169th Street",
+    "synonyms": [
+      "169th Street"
+    ]
+  },
+  {
+    "value": "170th Street",
+    "synonyms": [
+      "170th Street"
+    ]
+  },
+  {
+    "value": "174th 175th Streets",
+    "synonyms": [
+      "174th 175th Streets"
+    ]
+  },
+  {
+    "value": "174th Street",
+    "synonyms": [
+      "174th Street"
+    ]
+  },
+  {
+    "value": "175th Street",
+    "synonyms": [
+      "175th Street"
+    ]
+  },
+  {
+    "value": "176th Street",
+    "synonyms": [
+      "176th Street"
+    ]
+  },
+  {
+    "value": "181st Street",
+    "synonyms": [
+      "181st Street"
+    ]
+  },
+  {
+    "value": "182nd 183rd Streets",
+    "synonyms": [
+      "182nd 183rd Streets"
+    ]
+  },
+  {
+    "value": "183rd Street",
+    "synonyms": [
+      "183rd Street"
+    ]
+  },
+  {
+    "value": "18th Avenue",
+    "synonyms": [
+      "18th Avenue"
+    ]
+  },
+  {
+    "value": "18th Street",
+    "synonyms": [
+      "18th Street"
+    ]
+  },
+  {
+    "value": "190th Street",
+    "synonyms": [
+      "190th Street"
+    ]
+  },
+  {
+    "value": "191st Street",
+    "synonyms": [
+      "191st Street"
+    ]
+  },
+  {
+    "value": "1st Avenue",
+    "synonyms": [
+      "1st Avenue"
+    ]
+  },
+  {
+    "value": "207th Street",
+    "synonyms": [
+      "207th Street"
+    ]
+  },
+  {
+    "value": "20th Avenue",
+    "synonyms": [
+      "20th Avenue"
+    ]
+  },
+  {
+    "value": "215th Street",
+    "synonyms": [
+      "215th Street"
+    ]
+  },
+  {
+    "value": "219th Street",
+    "synonyms": [
+      "219th Street"
+    ]
+  },
+  {
+    "value": "21st Street",
+    "synonyms": [
+      "21st Street"
+    ]
+  },
+  {
+    "value": "21st Street, Queensbridge",
+    "synonyms": [
+      "21st Street",
+      "Queensbridge",
+      "Queensbridge, 21st Street"
+    ]
+  },
+  {
+    "value": "225th Street",
+    "synonyms": [
+      "225th Street"
+    ]
+  },
+  {
+    "value": "231st Street",
+    "synonyms": [
+      "231st Street"
+    ]
+  },
+  {
+    "value": "233rd Street",
+    "synonyms": [
+      "233rd Street"
+    ]
+  },
+  {
+    "value": "238th Street",
+    "synonyms": [
+      "238th Street"
+    ]
+  },
+  {
+    "value": "23rd Street",
+    "synonyms": [
+      "23rd Street"
+    ]
+  },
+  {
+    "value": "25th Avenue",
+    "synonyms": [
+      "25th Avenue"
+    ]
+  },
+  {
+    "value": "25th Street",
+    "synonyms": [
+      "25th Street"
+    ]
+  },
+  {
+    "value": "28th Street",
+    "synonyms": [
+      "28th Street"
+    ]
+  },
+  {
+    "value": "2nd Avenue",
+    "synonyms": [
+      "2nd Avenue"
+    ]
+  },
+  {
+    "value": "30th Avenue",
+    "synonyms": [
+      "30th Avenue"
+    ]
+  },
+  {
+    "value": "33rd Street",
+    "synonyms": [
+      "33rd Street"
+    ]
+  },
+  {
+    "value": "34th Street, 11st Avenue",
+    "synonyms": [
+      "34th Street",
+      "11st Avenue",
+      "11st Avenue, 34th Street"
+    ]
+  },
+  {
+    "value": "34th Street, Herald Square",
+    "synonyms": [
+      "34th Street",
+      "Herald Square",
+      "Herald Square, 34th Street"
+    ]
+  },
+  {
+    "value": "34th Street, Penn Station",
+    "synonyms": [
+      "34th Street",
+      "Penn Station",
+      "Penn Station, 34th Street"
+    ]
+  },
+  {
+    "value": "36th Avenue",
+    "synonyms": [
+      "36th Avenue"
+    ]
+  },
+  {
+    "value": "36th Street",
+    "synonyms": [
+      "36th Street"
+    ]
+  },
+  {
+    "value": "39th Avenue",
+    "synonyms": [
+      "39th Avenue"
+    ]
+  },
+  {
+    "value": "3rd Avenue",
+    "synonyms": [
+      "3rd Avenue"
+    ]
+  },
+  {
+    "value": "3rd Avenue, 138th Street",
+    "synonyms": [
+      "3rd Avenue",
+      "138th Street",
+      "138th Street, 3rd Avenue"
+    ]
+  },
+  {
+    "value": "3rd Avenue, 149th Street",
+    "synonyms": [
+      "3rd Avenue",
+      "149th Street",
+      "149th Street, 3rd Avenue"
+    ]
+  },
+  {
+    "value": "40th Street",
+    "synonyms": [
+      "40th Street"
+    ]
+  },
+  {
+    "value": "42nd Street, Bryant Pk",
+    "synonyms": [
+      "42nd Street",
+      "Bryant Pk",
+      "Bryant Pk, 42nd Street"
+    ]
+  },
+  {
+    "value": "42nd Street, Port Authority Bus Terminal",
+    "synonyms": [
+      "42nd Street",
+      "Port Authority Bus Terminal",
+      "Port Authority Bus Terminal, 42nd Street"
+    ]
+  },
+  {
+    "value": "45th Street",
+    "synonyms": [
+      "45th Street"
+    ]
+  },
+  {
+    "value": "46th Street",
+    "synonyms": [
+      "46th Street"
+    ]
+  },
+  {
+    "value": "47th 50th Streets, Rockefeller Center",
+    "synonyms": [
+      "47th 50th Streets",
+      "Rockefeller Center",
+      "Rockefeller Center, 47th 50th Streets"
+    ]
+  },
+  {
+    "value": "49th Street",
+    "synonyms": [
+      "49th Street"
+    ]
+  },
+  {
+    "value": "4th Avenue",
+    "synonyms": [
+      "4th Avenue"
+    ]
+  },
+  {
+    "value": "50th Street",
+    "synonyms": [
+      "50th Street"
+    ]
+  },
+  {
+    "value": "51st Street",
+    "synonyms": [
+      "51st Street"
+    ]
+  },
+  {
+    "value": "52nd Street",
+    "synonyms": [
+      "52nd Street"
+    ]
+  },
+  {
+    "value": "53rd Street",
+    "synonyms": [
+      "53rd Street"
+    ]
+  },
+  {
+    "value": "55th Street",
+    "synonyms": [
+      "55th Street"
+    ]
+  },
+  {
+    "value": "57th Street",
+    "synonyms": [
+      "57th Street"
+    ]
+  },
+  {
+    "value": "57th Street, 7th Avenue",
+    "synonyms": [
+      "57th Street",
+      "7th Avenue",
+      "7th Avenue, 57th Street"
+    ]
+  },
+  {
+    "value": "59th Street",
+    "synonyms": [
+      "59th Street"
+    ]
+  },
+  {
+    "value": "59th Street, Columbus Circle",
+    "synonyms": [
+      "59th Street",
+      "Columbus Circle",
+      "Columbus Circle, 59th Street"
+    ]
+  },
+  {
+    "value": "5th Avenue",
+    "synonyms": [
+      "5th Avenue"
+    ]
+  },
+  {
+    "value": "5th Avenue, 53rd Street",
+    "synonyms": [
+      "5th Avenue",
+      "53rd Street",
+      "53rd Street, 5th Avenue"
+    ]
+  },
+  {
+    "value": "5th Avenue, 59th Street",
+    "synonyms": [
+      "5th Avenue",
+      "59th Street",
+      "59th Street, 5th Avenue"
+    ]
+  },
+  {
+    "value": "62nd Street",
+    "synonyms": [
+      "62nd Street"
+    ]
+  },
+  {
+    "value": "63rd Dr, Rego Park",
+    "synonyms": [
+      "63rd Dr",
+      "Rego Park",
+      "Rego Park, 63rd Dr",
+      "63rd Dr, Rego Park"
+    ]
+  },
+  {
+    "value": "65th Street",
+    "synonyms": [
+      "65th Street"
+    ]
+  },
+  {
+    "value": "66th Street, Lincoln Center",
+    "synonyms": [
+      "66th Street",
+      "Lincoln Center",
+      "Lincoln Center, 66th Street"
+    ]
+  },
+  {
+    "value": "67th Avenue",
+    "synonyms": [
+      "67th Avenue"
+    ]
+  },
+  {
+    "value": "68th Street, Hunter College",
+    "synonyms": [
+      "68th Street",
+      "Hunter College",
+      "Hunter College, 68th Street"
+    ]
+  },
+  {
+    "value": "69th Street",
+    "synonyms": [
+      "69th Street"
+    ]
+  },
+  {
+    "value": "6th Avenue",
+    "synonyms": [
+      "6th Avenue"
+    ]
+  },
+  {
+    "value": "71st Street",
+    "synonyms": [
+      "71st Street"
+    ]
+  },
+  {
+    "value": "72nd Street",
+    "synonyms": [
+      "72nd Street"
+    ]
+  },
+  {
+    "value": "74th Street, Broadway",
+    "synonyms": [
+      "74th Street",
+      "Broadway",
+      "Broadway, 74th Street"
+    ]
+  },
+  {
+    "value": "75th Avenue",
+    "synonyms": [
+      "75th Avenue"
+    ]
+  },
+  {
+    "value": "75th Street",
+    "synonyms": [
+      "75th Street"
+    ]
+  },
+  {
+    "value": "77th Street",
+    "synonyms": [
+      "77th Street"
+    ]
+  },
+  {
+    "value": "79th Street",
+    "synonyms": [
+      "79th Street"
+    ]
+  },
+  {
+    "value": "7th Avenue",
+    "synonyms": [
+      "7th Avenue"
+    ]
+  },
+  {
+    "value": "80th Street",
+    "synonyms": [
+      "80th Street"
+    ]
+  },
+  {
+    "value": "81st Street, Museum of Natural History",
+    "synonyms": [
+      "81st Street",
+      "Museum of Natural History",
+      "Museum of Natural History, 81st Street"
+    ]
+  },
+  {
+    "value": "82nd Street, Jackson Heights",
+    "synonyms": [
+      "82nd Street",
+      "Jackson Heights",
+      "Jackson Heights, 82nd Street"
+    ]
+  },
+  {
+    "value": "85th Street, Forest Parkway",
+    "synonyms": [
+      "85th Street",
+      "Forest Parkway",
+      "Forest Parkway, 85th Street"
+    ]
+  },
+  {
+    "value": "86th Street",
+    "synonyms": [
+      "86th Street"
+    ]
+  },
+  {
+    "value": "88th Street",
+    "synonyms": [
+      "88th Street"
+    ]
+  },
+  {
+    "value": "8th Avenue",
+    "synonyms": [
+      "8th Avenue"
+    ]
+  },
+  {
+    "value": "8th Street, NYU",
+    "synonyms": [
+      "8th Street",
+      "NYU",
+      "NYU, 8th Street"
+    ]
+  },
+  {
+    "value": "90th Street, Elmhurst Avenue",
+    "synonyms": [
+      "90th Street",
+      "Elmhurst Avenue",
+      "Elmhurst Avenue, 90th Street"
+    ]
+  },
+  {
+    "value": "96th Street",
+    "synonyms": [
+      "96th Street"
+    ]
+  },
+  {
+    "value": "9th Avenue",
+    "synonyms": [
+      "9th Avenue"
+    ]
+  },
+  {
+    "value": "9th Street",
+    "synonyms": [
+      "9th Street"
+    ]
+  },
+  {
+    "value": "Alabama Avenue",
+    "synonyms": [
+      "Alabama Avenue"
+    ]
+  },
+  {
+    "value": "Allerton Avenue",
+    "synonyms": [
+      "Allerton Avenue"
+    ]
+  },
+  {
+    "value": "Annadale",
+    "synonyms": [
+      "Annadale"
+    ]
+  },
+  {
+    "value": "Aqueduct Racetrack",
+    "synonyms": [
+      "Aqueduct Racetrack"
+    ]
+  },
+  {
+    "value": "Aqueduct, North Conduit Avenue",
+    "synonyms": [
+      "Aqueduct",
+      "North Conduit Avenue",
+      "North Conduit Avenue, Aqueduct",
+      "Aqueduct, North Conduit Avenue"
+    ]
+  },
+  {
+    "value": "Arthur Kill",
+    "synonyms": [
+      "Arthur Kill"
+    ]
+  },
+  {
+    "value": "Astor Place",
+    "synonyms": [
+      "Astor Place"
+    ]
+  },
+  {
+    "value": "Astoria Boulevard",
+    "synonyms": [
+      "Astoria Boulevard"
+    ]
+  },
+  {
+    "value": "Astoria, Ditmars Boulevard",
+    "synonyms": [
+      "Astoria",
+      "Ditmars Boulevard",
+      "Ditmars Boulevard, Astoria",
+      "Astoria, Ditmars Boulevard"
+    ]
+  },
+  {
+    "value": "Atlantic",
+    "synonyms": [
+      "Atlantic"
+    ]
+  },
+  {
+    "value": "Atlantic Avenue",
+    "synonyms": [
+      "Atlantic Avenue"
+    ]
+  },
+  {
+    "value": "Atlantic Avenue, Barclays Center",
+    "synonyms": [
+      "Atlantic Avenue",
+      "Barclays Center",
+      "Barclays Center, Atlantic Avenue"
+    ]
+  },
+  {
+    "value": "Avenue H",
+    "synonyms": [
+      "Avenue H"
+    ]
+  },
+  {
+    "value": "Avenue I",
+    "synonyms": [
+      "Avenue I"
+    ]
+  },
+  {
+    "value": "Avenue J",
+    "synonyms": [
+      "Avenue J"
+    ]
+  },
+  {
+    "value": "Avenue M",
+    "synonyms": [
+      "Avenue M"
+    ]
+  },
+  {
+    "value": "Avenue N",
+    "synonyms": [
+      "Avenue N"
+    ]
+  },
+  {
+    "value": "Avenue P",
+    "synonyms": [
+      "Avenue P"
+    ]
+  },
+  {
+    "value": "Avenue U",
+    "synonyms": [
+      "Avenue U"
+    ]
+  },
+  {
+    "value": "Avenue X",
+    "synonyms": [
+      "Avenue X"
+    ]
+  },
+  {
+    "value": "Bay 50th Street",
+    "synonyms": [
+      "Bay 50th Street"
+    ]
+  },
+  {
+    "value": "Bay Parkway",
+    "synonyms": [
+      "Bay Parkway"
+    ]
+  },
+  {
+    "value": "Bay Ridge Avenue",
+    "synonyms": [
+      "Bay Ridge Avenue"
+    ]
+  },
+  {
+    "value": "Bay Ridge, 95th Street",
+    "synonyms": [
+      "Bay Ridge",
+      "95th Street",
+      "95th Street, Bay Ridge",
+      "Bay Ridge, 95th Street"
+    ]
+  },
+  {
+    "value": "Bay Terrace",
+    "synonyms": [
+      "Bay Terrace"
+    ]
+  },
+  {
+    "value": "Baychester Avenue",
+    "synonyms": [
+      "Baychester Avenue"
+    ]
+  },
+  {
+    "value": "Beach 105th Street",
+    "synonyms": [
+      "Beach 105th Street"
+    ]
+  },
+  {
+    "value": "Beach 25th Street",
+    "synonyms": [
+      "Beach 25th Street"
+    ]
+  },
+  {
+    "value": "Beach 36th Street",
+    "synonyms": [
+      "Beach 36th Street"
+    ]
+  },
+  {
+    "value": "Beach 44th Street",
+    "synonyms": [
+      "Beach 44th Street"
+    ]
+  },
+  {
+    "value": "Beach 60th Street",
+    "synonyms": [
+      "Beach 60th Street"
+    ]
+  },
+  {
+    "value": "Beach 67th Street",
+    "synonyms": [
+      "Beach 67th Street"
+    ]
+  },
+  {
+    "value": "Beach 90th Street",
+    "synonyms": [
+      "Beach 90th Street"
+    ]
+  },
+  {
+    "value": "Beach 98th Street",
+    "synonyms": [
+      "Beach 98th Street"
+    ]
+  },
+  {
+    "value": "Bedford Avenue",
+    "synonyms": [
+      "Bedford Avenue"
+    ]
+  },
+  {
+    "value": "Bedford Park Boulevard",
+    "synonyms": [
+      "Bedford Park Boulevard"
+    ]
+  },
+  {
+    "value": "Bedford Park Boulevard, Lehman College",
+    "synonyms": [
+      "Bedford Park Boulevard",
+      "Lehman College",
+      "Lehman College, Bedford Park Boulevard",
+      "Bedford Park Boulevard, Lehman College"
+    ]
+  },
+  {
+    "value": "Bedford, Nostrand Avenues",
+    "synonyms": [
+      "Bedford",
+      "Nostrand Avenues",
+      "Nostrand Avenues, Bedford",
+      "Bedford, Nostrand Avenues"
+    ]
+  },
+  {
+    "value": "Bergen Street",
+    "synonyms": [
+      "Bergen Street"
+    ]
+  },
+  {
+    "value": "Beverley Road",
+    "synonyms": [
+      "Beverley Road"
+    ]
+  },
+  {
+    "value": "Beverly Road",
+    "synonyms": [
+      "Beverly Road"
+    ]
+  },
+  {
+    "value": "Bleecker Street",
+    "synonyms": [
+      "Bleecker Street"
+    ]
+  },
+  {
+    "value": "Borough Hall",
+    "synonyms": [
+      "Borough Hall"
+    ]
+  },
+  {
+    "value": "Botanic Garden",
+    "synonyms": [
+      "Botanic Garden"
+    ]
+  },
+  {
+    "value": "Bowery",
+    "synonyms": [
+      "Bowery"
+    ]
+  },
+  {
+    "value": "Bowling Green",
+    "synonyms": [
+      "Bowling Green"
+    ]
+  },
+  {
+    "value": "Briarwood, Van Wyck Boulevard",
+    "synonyms": [
+      "Briarwood",
+      "Van Wyck Boulevard",
+      "Van Wyck Boulevard, Briarwood",
+      "Briarwood, Van Wyck Boulevard"
+    ]
+  },
+  {
+    "value": "Brighton Beach",
+    "synonyms": [
+      "Brighton Beach"
+    ]
+  },
+  {
+    "value": "Broad Channel",
+    "synonyms": [
+      "Broad Channel"
+    ]
+  },
+  {
+    "value": "Broad Street",
+    "synonyms": [
+      "Broad Street"
+    ]
+  },
+  {
+    "value": "Broadway",
+    "synonyms": [
+      "Broadway"
+    ]
+  },
+  {
+    "value": "Broadway Junction",
+    "synonyms": [
+      "Broadway Junction"
+    ]
+  },
+  {
+    "value": "Broadway-Lafayette Street",
+    "synonyms": [
+      "Broadway-Lafayette Street"
+    ]
+  },
+  {
+    "value": "Bronx Park East",
+    "synonyms": [
+      "Bronx Park East"
+    ]
+  },
+  {
+    "value": "Brook Avenue",
+    "synonyms": [
+      "Brook Avenue"
+    ]
+  },
+  {
+    "value": "Brooklyn Bridge, City Hall",
+    "synonyms": [
+      "Brooklyn Bridge",
+      "City Hall",
+      "City Hall, Brooklyn Bridge",
+      "Brooklyn Bridge, City Hall"
+    ]
+  },
+  {
+    "value": "Buhre Avenue",
+    "synonyms": [
+      "Buhre Avenue"
+    ]
+  },
+  {
+    "value": "Burke Avenue",
+    "synonyms": [
+      "Burke Avenue"
+    ]
+  },
+  {
+    "value": "Burnside Avenue",
+    "synonyms": [
+      "Burnside Avenue"
+    ]
+  },
+  {
+    "value": "Bushwick Avenue, Aberdeen Street",
+    "synonyms": [
+      "Bushwick Avenue",
+      "Aberdeen Street",
+      "Aberdeen Street, Bushwick Avenue"
+    ]
+  },
+  {
+    "value": "Canal Street",
+    "synonyms": [
+      "Canal Street"
+    ]
+  },
+  {
+    "value": "Canarsie, Rockaway Parkway",
+    "synonyms": [
+      "Canarsie",
+      "Rockaway Parkway",
+      "Rockaway Parkway, Canarsie",
+      "Canarsie, Rockaway Parkway"
+    ]
+  },
+  {
+    "value": "Carroll Street",
+    "synonyms": [
+      "Carroll Street"
+    ]
+  },
+  {
+    "value": "Castle Hill Avenue",
+    "synonyms": [
+      "Castle Hill Avenue"
+    ]
+  },
+  {
+    "value": "Cathedral Parkway",
+    "synonyms": [
+      "Cathedral Parkway"
+    ]
+  },
+  {
+    "value": "Cathedral Parkway, 110th Street",
+    "synonyms": [
+      "Cathedral Parkway",
+      "110th Street",
+      "110th Street, Cathedral Parkway"
+    ]
+  },
+  {
+    "value": "Central Avenue",
+    "synonyms": [
+      "Central Avenue"
+    ]
+  },
+  {
+    "value": "Central Park North, 110th Street",
+    "synonyms": [
+      "Central Park North",
+      "110th Street",
+      "110th Street, Central Park North"
+    ]
+  },
+  {
+    "value": "Chambers Street",
+    "synonyms": [
+      "Chambers Street"
+    ]
+  },
+  {
+    "value": "Chauncey Street",
+    "synonyms": [
+      "Chauncey Street"
+    ]
+  },
+  {
+    "value": "Christopher Street, Sheridan Square",
+    "synonyms": [
+      "Christopher Street",
+      "Sheridan Square",
+      "Sheridan Square, Christopher Street"
+    ]
+  },
+  {
+    "value": "Church Avenue",
+    "synonyms": [
+      "Church Avenue"
+    ]
+  },
+  {
+    "value": "City Hall",
+    "synonyms": [
+      "City Hall"
+    ]
+  },
+  {
+    "value": "Clark Street",
+    "synonyms": [
+      "Clark Street"
+    ]
+  },
+  {
+    "value": "Classon Avenue",
+    "synonyms": [
+      "Classon Avenue"
+    ]
+  },
+  {
+    "value": "Cleveland Street",
+    "synonyms": [
+      "Cleveland Street"
+    ]
+  },
+  {
+    "value": "Clifton",
+    "synonyms": [
+      "Clifton"
+    ]
+  },
+  {
+    "value": "Clinton, Washington Avenues",
+    "synonyms": [
+      "Clinton",
+      "Washington Avenues",
+      "Washington Avenues, Clinton",
+      "Clinton, Washington Avenues"
+    ]
+  },
+  {
+    "value": "Coney Island, Stillwell Avenue",
+    "synonyms": [
+      "Coney Island",
+      "Stillwell Avenue",
+      "Stillwell Avenue, Coney Island",
+      "Coney Island, Stillwell Avenue"
+    ]
+  },
+  {
+    "value": "Cortelyou Road",
+    "synonyms": [
+      "Cortelyou Road"
+    ]
+  },
+  {
+    "value": "Cortlandt Street",
+    "synonyms": [
+      "Cortlandt Street"
+    ]
+  },
+  {
+    "value": "Court Square",
+    "synonyms": [
+      "Court Square"
+    ]
+  },
+  {
+    "value": "Court Street",
+    "synonyms": [
+      "Court Street"
+    ]
+  },
+  {
+    "value": "Crescent Street",
+    "synonyms": [
+      "Crescent Street"
+    ]
+  },
+  {
+    "value": "Crown Heights, Utica Avenue",
+    "synonyms": [
+      "Crown Heights",
+      "Utica Avenue",
+      "Utica Avenue, Crown Heights",
+      "Crown Heights, Utica Avenue"
+    ]
+  },
+  {
+    "value": "Cypress Avenue",
+    "synonyms": [
+      "Cypress Avenue"
+    ]
+  },
+  {
+    "value": "Cypress Hills",
+    "synonyms": [
+      "Cypress Hills"
+    ]
+  },
+  {
+    "value": "DeKalb Avenue",
+    "synonyms": [
+      "DeKalb Avenue"
+    ]
+  },
+  {
+    "value": "Delancey Street",
+    "synonyms": [
+      "Delancey Street"
+    ]
+  },
+  {
+    "value": "Ditmas Avenue",
+    "synonyms": [
+      "Ditmas Avenue"
+    ]
+  },
+  {
+    "value": "Dongan Hills",
+    "synonyms": [
+      "Dongan Hills"
+    ]
+  },
+  {
+    "value": "Dyckman Street",
+    "synonyms": [
+      "Dyckman Street"
+    ]
+  },
+  {
+    "value": "East 105th Street",
+    "synonyms": [
+      "East 105th Street"
+    ]
+  },
+  {
+    "value": "East 143rd Street, Street Mary's Street",
+    "synonyms": [
+      "East 143rd Street",
+      "Street Mary's Street",
+      "Street Mary's Street, East 143rd Street"
+    ]
+  },
+  {
+    "value": "East 149th Street",
+    "synonyms": [
+      "East 149th Street"
+    ]
+  },
+  {
+    "value": "East 180th Street",
+    "synonyms": [
+      "East 180th Street"
+    ]
+  },
+  {
+    "value": "East Broadway",
+    "synonyms": [
+      "East Broadway"
+    ]
+  },
+  {
+    "value": "Eastchester, Dyre Avenue",
+    "synonyms": [
+      "Eastchester",
+      "Dyre Avenue",
+      "Dyre Avenue, Eastchester",
+      "Eastchester, Dyre Avenue"
+    ]
+  },
+  {
+    "value": "Eastern Parkway, Brooklyn Museum",
+    "synonyms": [
+      "Eastern Parkway",
+      "Brooklyn Museum",
+      "Brooklyn Museum, Eastern Parkway",
+      "Eastern Parkway, Brooklyn Museum"
+    ]
+  },
+  {
+    "value": "Elder Avenue",
+    "synonyms": [
+      "Elder Avenue"
+    ]
+  },
+  {
+    "value": "Elmhurst Avenue",
+    "synonyms": [
+      "Elmhurst Avenue"
+    ]
+  },
+  {
+    "value": "Eltingville",
+    "synonyms": [
+      "Eltingville"
+    ]
+  },
+  {
+    "value": "Essex Street",
+    "synonyms": [
+      "Essex Street"
+    ]
+  },
+  {
+    "value": "Euclid Avenue",
+    "synonyms": [
+      "Euclid Avenue"
+    ]
+  },
+  {
+    "value": "Far Rockaway, Mott Avenue",
+    "synonyms": [
+      "Far Rockaway",
+      "Mott Avenue",
+      "Mott Avenue, Far Rockaway",
+      "Far Rockaway, Mott Avenue"
+    ]
+  },
+  {
+    "value": "Flatbush Avenue, Brooklyn College",
+    "synonyms": [
+      "Flatbush Avenue",
+      "Brooklyn College",
+      "Brooklyn College, Flatbush Avenue"
+    ]
+  },
+  {
+    "value": "Flushing Avenue",
+    "synonyms": [
+      "Flushing Avenue"
+    ]
+  },
+  {
+    "value": "Flushing, Main Street",
+    "synonyms": [
+      "Flushing",
+      "Main Street",
+      "Main Street, Flushing",
+      "Flushing, Main Street"
+    ]
+  },
+  {
+    "value": "Fordham Road",
+    "synonyms": [
+      "Fordham Road"
+    ]
+  },
+  {
+    "value": "Forest Avenue",
+    "synonyms": [
+      "Forest Avenue"
+    ]
+  },
+  {
+    "value": "Forest Hills, 71st Avenue",
+    "synonyms": [
+      "Forest Hills",
+      "71st Avenue",
+      "71st Avenue, Forest Hills",
+      "Forest Hills, 71st Avenue"
+    ]
+  },
+  {
+    "value": "Fort Hamilton Parkway",
+    "synonyms": [
+      "Fort Hamilton Parkway"
+    ]
+  },
+  {
+    "value": "Franklin Avenue",
+    "synonyms": [
+      "Franklin Avenue"
+    ]
+  },
+  {
+    "value": "Franklin Street",
+    "synonyms": [
+      "Franklin Street"
+    ]
+  },
+  {
+    "value": "Freeman Street",
+    "synonyms": [
+      "Freeman Street"
+    ]
+  },
+  {
+    "value": "Fresh Pond Road",
+    "synonyms": [
+      "Fresh Pond Road"
+    ]
+  },
+  {
+    "value": "Fulton Street",
+    "synonyms": [
+      "Fulton Street"
+    ]
+  },
+  {
+    "value": "Gates Avenue",
+    "synonyms": [
+      "Gates Avenue"
+    ]
+  },
+  {
+    "value": "Graham Avenue",
+    "synonyms": [
+      "Graham Avenue"
+    ]
+  },
+  {
+    "value": "Grand Army Plaza",
+    "synonyms": [
+      "Grand Army Plaza"
+    ]
+  },
+  {
+    "value": "Grand Avenue, Newtown",
+    "synonyms": [
+      "Grand Avenue",
+      "Newtown",
+      "Newtown, Grand Avenue"
+    ]
+  },
+  {
+    "value": "Grand Central, 42nd Street",
+    "synonyms": [
+      "Grand Central",
+      "42nd Street",
+      "42nd Street, Grand Central",
+      "Grand Central, 42nd Street"
+    ]
+  },
+  {
+    "value": "Grand Street",
+    "synonyms": [
+      "Grand Street"
+    ]
+  },
+  {
+    "value": "Grant Avenue",
+    "synonyms": [
+      "Grant Avenue"
+    ]
+  },
+  {
+    "value": "Grant City",
+    "synonyms": [
+      "Grant City"
+    ]
+  },
+  {
+    "value": "Grasmere",
+    "synonyms": [
+      "Grasmere"
+    ]
+  },
+  {
+    "value": "Great Kills",
+    "synonyms": [
+      "Great Kills"
+    ]
+  },
+  {
+    "value": "Greenpoint Avenue",
+    "synonyms": [
+      "Greenpoint Avenue"
+    ]
+  },
+  {
+    "value": "Gun Hill Road",
+    "synonyms": [
+      "Gun Hill Road"
+    ]
+  },
+  {
+    "value": "Halsey Street",
+    "synonyms": [
+      "Halsey Street"
+    ]
+  },
+  {
+    "value": "Harlem, 148th Street",
+    "synonyms": [
+      "Harlem",
+      "148th Street",
+      "148th Street, Harlem",
+      "Harlem, 148th Street"
+    ]
+  },
+  {
+    "value": "Hewes Street",
+    "synonyms": [
+      "Hewes Street"
+    ]
+  },
+  {
+    "value": "High Street",
+    "synonyms": [
+      "High Street"
+    ]
+  },
+  {
+    "value": "Houston Street",
+    "synonyms": [
+      "Houston Street"
+    ]
+  },
+  {
+    "value": "Howard Beach, JFK Airport",
+    "synonyms": [
+      "Howard Beach",
+      "JFK Airport",
+      "JFK Airport, Howard Beach",
+      "Howard Beach, JFK Airport"
+    ]
+  },
+  {
+    "value": "Hoyt Street",
+    "synonyms": [
+      "Hoyt Street"
+    ]
+  },
+  {
+    "value": "Hoyt, Schermerhorn Streets",
+    "synonyms": [
+      "Hoyt",
+      "Schermerhorn Streets",
+      "Schermerhorn Streets, Hoyt",
+      "Hoyt, Schermerhorn Streets"
+    ]
+  },
+  {
+    "value": "Huguenot",
+    "synonyms": [
+      "Huguenot"
+    ]
+  },
+  {
+    "value": "Hunters Point Avenue",
+    "synonyms": [
+      "Hunters Point Avenue"
+    ]
+  },
+  {
+    "value": "Hunts Point Avenue",
+    "synonyms": [
+      "Hunts Point Avenue"
+    ]
+  },
+  {
+    "value": "Intervale Avenue",
+    "synonyms": [
+      "Intervale Avenue"
+    ]
+  },
+  {
+    "value": "Inwood, 207th Street",
+    "synonyms": [
+      "Inwood",
+      "207th Street",
+      "207th Street, Inwood",
+      "Inwood, 207th Street"
+    ]
+  },
+  {
+    "value": "Jackson Avenue",
+    "synonyms": [
+      "Jackson Avenue"
+    ]
+  },
+  {
+    "value": "Jackson Heights, Roosevelt Avenue",
+    "synonyms": [
+      "Jackson Heights",
+      "Roosevelt Avenue",
+      "Roosevelt Avenue, Jackson Heights",
+      "Jackson Heights, Roosevelt Avenue"
+    ]
+  },
+  {
+    "value": "Jamaica Center, Parsons, Archer",
+    "synonyms": [
+      "Jamaica Center",
+      "Parsons",
+      "Archer",
+      "Jamaica Center, Parsons, Archer"
+    ]
+  },
+  {
+    "value": "Jamaica, 179th Street",
+    "synonyms": [
+      "Jamaica",
+      "179th Street",
+      "179th Street, Jamaica",
+      "Jamaica, 179th Street"
+    ]
+  },
+  {
+    "value": "Jamaica, Van Wyck",
+    "synonyms": [
+      "Jamaica",
+      "Van Wyck",
+      "Van Wyck, Jamaica",
+      "Jamaica, Van Wyck"
+    ]
+  },
+  {
+    "value": "Jay Street, MetroTech",
+    "synonyms": [
+      "Jay Street",
+      "MetroTech",
+      "MetroTech, Jay Street"
+    ]
+  },
+  {
+    "value": "Jefferson Avenue",
+    "synonyms": [
+      "Jefferson Avenue"
+    ]
+  },
+  {
+    "value": "Jefferson Street",
+    "synonyms": [
+      "Jefferson Street"
+    ]
+  },
+  {
+    "value": "Junction Boulevard",
+    "synonyms": [
+      "Junction Boulevard"
+    ]
+  },
+  {
+    "value": "Junius Street",
+    "synonyms": [
+      "Junius Street"
+    ]
+  },
+  {
+    "value": "Kew Gardens, Union Tpke",
+    "synonyms": [
+      "Kew Gardens",
+      "Union Tpke",
+      "Union Tpke, Kew Gardens",
+      "Kew Gardens, Union Tpke"
+    ]
+  },
+  {
+    "value": "Kings Highway",
+    "synonyms": [
+      "Kings Highway"
+    ]
+  },
+  {
+    "value": "Kingsbridge Road",
+    "synonyms": [
+      "Kingsbridge Road"
+    ]
+  },
+  {
+    "value": "Kingston Avenue",
+    "synonyms": [
+      "Kingston Avenue"
+    ]
+  },
+  {
+    "value": "Kingston, Throop Avenues",
+    "synonyms": [
+      "Kingston",
+      "Throop Avenues",
+      "Throop Avenues, Kingston",
+      "Kingston, Throop Avenues"
+    ]
+  },
+  {
+    "value": "Knickerbocker Avenue",
+    "synonyms": [
+      "Knickerbocker Avenue"
+    ]
+  },
+  {
+    "value": "Kosciuszko Street",
+    "synonyms": [
+      "Kosciuszko Street"
+    ]
+  },
+  {
+    "value": "Lafayette Avenue",
+    "synonyms": [
+      "Lafayette Avenue"
+    ]
+  },
+  {
+    "value": "Lexington Avenue, 53rd Street",
+    "synonyms": [
+      "Lexington Avenue",
+      "53rd Street",
+      "53rd Street, Lexington Avenue"
+    ]
+  },
+  {
+    "value": "Lexington Avenue, 59th Street",
+    "synonyms": [
+      "Lexington Avenue",
+      "59th Street",
+      "59th Street, Lexington Avenue"
+    ]
+  },
+  {
+    "value": "Lexington Avenue, 63rd Street",
+    "synonyms": [
+      "Lexington Avenue",
+      "63rd Street",
+      "63rd Street, Lexington Avenue"
+    ]
+  },
+  {
+    "value": "Liberty Avenue",
+    "synonyms": [
+      "Liberty Avenue"
+    ]
+  },
+  {
+    "value": "Livonia Avenue",
+    "synonyms": [
+      "Livonia Avenue"
+    ]
+  },
+  {
+    "value": "Longwood Avenue",
+    "synonyms": [
+      "Longwood Avenue"
+    ]
+  },
+  {
+    "value": "Lorimer Street",
+    "synonyms": [
+      "Lorimer Street"
+    ]
+  },
+  {
+    "value": "Marble Hill, 225th Street",
+    "synonyms": [
+      "Marble Hill",
+      "225th Street",
+      "225th Street, Marble Hill",
+      "Marble Hill, 225th Street"
+    ]
+  },
+  {
+    "value": "Marcy Avenue",
+    "synonyms": [
+      "Marcy Avenue"
+    ]
+  },
+  {
+    "value": "Metropolitan Avenue",
+    "synonyms": [
+      "Metropolitan Avenue"
+    ]
+  },
+  {
+    "value": "Mets, Willets Point",
+    "synonyms": [
+      "Mets",
+      "Willets Point",
+      "Willets Point, Mets",
+      "Mets, Willets Point"
+    ]
+  },
+  {
+    "value": "Middle Village, Metropolitan Avenue",
+    "synonyms": [
+      "Middle Village",
+      "Metropolitan Avenue",
+      "Metropolitan Avenue, Middle Village",
+      "Middle Village, Metropolitan Avenue"
+    ]
+  },
+  {
+    "value": "Middletown Road",
+    "synonyms": [
+      "Middletown Road"
+    ]
+  },
+  {
+    "value": "Montrose Avenue",
+    "synonyms": [
+      "Montrose Avenue"
+    ]
+  },
+  {
+    "value": "Morgan Avenue",
+    "synonyms": [
+      "Morgan Avenue"
+    ]
+  },
+  {
+    "value": "Morris Park",
+    "synonyms": [
+      "Morris Park"
+    ]
+  },
+  {
+    "value": "Morrison Av- Sound View",
+    "synonyms": [
+      "Morrison Av- Sound View"
+    ]
+  },
+  {
+    "value": "Mosholu Parkway",
+    "synonyms": [
+      "Mosholu Parkway"
+    ]
+  },
+  {
+    "value": "Mt Eden Avenue",
+    "synonyms": [
+      "Mt Eden Avenue"
+    ]
+  },
+  {
+    "value": "Myrtle Avenue",
+    "synonyms": [
+      "Myrtle Avenue"
+    ]
+  },
+  {
+    "value": "Myrtle, Willoughby Avenues",
+    "synonyms": [
+      "Myrtle",
+      "Willoughby Avenues",
+      "Willoughby Avenues, Myrtle",
+      "Myrtle, Willoughby Avenues"
+    ]
+  },
+  {
+    "value": "Myrtle, Wyckoff Avenues",
+    "synonyms": [
+      "Myrtle",
+      "Wyckoff Avenues",
+      "Wyckoff Avenues, Myrtle",
+      "Myrtle, Wyckoff Avenues"
+    ]
+  },
+  {
+    "value": "Nassau",
+    "synonyms": [
+      "Nassau"
+    ]
+  },
+  {
+    "value": "Nassau Avenue",
+    "synonyms": [
+      "Nassau Avenue"
+    ]
+  },
+  {
+    "value": "Neck Road",
+    "synonyms": [
+      "Neck Road"
+    ]
+  },
+  {
+    "value": "Neptune Avenue",
+    "synonyms": [
+      "Neptune Avenue"
+    ]
+  },
+  {
+    "value": "Nereid Avenue",
+    "synonyms": [
+      "Nereid Avenue"
+    ]
+  },
+  {
+    "value": "Nevins Street",
+    "synonyms": [
+      "Nevins Street"
+    ]
+  },
+  {
+    "value": "New Dorp",
+    "synonyms": [
+      "New Dorp"
+    ]
+  },
+  {
+    "value": "New Lots Avenue",
+    "synonyms": [
+      "New Lots Avenue"
+    ]
+  },
+  {
+    "value": "New Utrecht Avenue",
+    "synonyms": [
+      "New Utrecht Avenue"
+    ]
+  },
+  {
+    "value": "Newkirk Avenue",
+    "synonyms": [
+      "Newkirk Avenue"
+    ]
+  },
+  {
+    "value": "Newkirk Plaza",
+    "synonyms": [
+      "Newkirk Plaza"
+    ]
+  },
+  {
+    "value": "Northern Boulevard",
+    "synonyms": [
+      "Northern Boulevard"
+    ]
+  },
+  {
+    "value": "Norwood Avenue",
+    "synonyms": [
+      "Norwood Avenue"
+    ]
+  },
+  {
+    "value": "Norwood, 205th Street",
+    "synonyms": [
+      "Norwood",
+      "205th Street",
+      "205th Street, Norwood",
+      "Norwood, 205th Street"
+    ]
+  },
+  {
+    "value": "Nostrand Avenue",
+    "synonyms": [
+      "Nostrand Avenue"
+    ]
+  },
+  {
+    "value": "Oakwood Heights",
+    "synonyms": [
+      "Oakwood Heights"
+    ]
+  },
+  {
+    "value": "Ocean Parkway",
+    "synonyms": [
+      "Ocean Parkway"
+    ]
+  },
+  {
+    "value": "Old Town",
+    "synonyms": [
+      "Old Town"
+    ]
+  },
+  {
+    "value": "Ozone Park, Lefferts Boulevard",
+    "synonyms": [
+      "Ozone Park",
+      "Lefferts Boulevard",
+      "Lefferts Boulevard, Ozone Park",
+      "Ozone Park, Lefferts Boulevard"
+    ]
+  },
+  {
+    "value": "Park Place",
+    "synonyms": [
+      "Park Place"
+    ]
+  },
+  {
+    "value": "Parkchester",
+    "synonyms": [
+      "Parkchester"
+    ]
+  },
+  {
+    "value": "Parkside Avenue",
+    "synonyms": [
+      "Parkside Avenue"
+    ]
+  },
+  {
+    "value": "Parsons Boulevard",
+    "synonyms": [
+      "Parsons Boulevard"
+    ]
+  },
+  {
+    "value": "Pelham Bay Park",
+    "synonyms": [
+      "Pelham Bay Park"
+    ]
+  },
+  {
+    "value": "Pelham Parkway",
+    "synonyms": [
+      "Pelham Parkway"
+    ]
+  },
+  {
+    "value": "Pennsylvania Avenue",
+    "synonyms": [
+      "Pennsylvania Avenue"
+    ]
+  },
+  {
+    "value": "Pleasant Plains",
+    "synonyms": [
+      "Pleasant Plains"
+    ]
+  },
+  {
+    "value": "President Street",
+    "synonyms": [
+      "President Street"
+    ]
+  },
+  {
+    "value": "Prince Street",
+    "synonyms": [
+      "Prince Street"
+    ]
+  },
+  {
+    "value": "Prince's Bay",
+    "synonyms": [
+      "Prince's Bay"
+    ]
+  },
+  {
+    "value": "Prospect Avenue",
+    "synonyms": [
+      "Prospect Avenue"
+    ]
+  },
+  {
+    "value": "Prospect Park",
+    "synonyms": [
+      "Prospect Park"
+    ]
+  },
+  {
+    "value": "Queens Plaza",
+    "synonyms": [
+      "Queens Plaza"
+    ]
+  },
+  {
+    "value": "Queensboro Plaza",
+    "synonyms": [
+      "Queensboro Plaza"
+    ]
+  },
+  {
+    "value": "Ralph Avenue",
+    "synonyms": [
+      "Ralph Avenue"
+    ]
+  },
+  {
+    "value": "Rector Street",
+    "synonyms": [
+      "Rector Street"
+    ]
+  },
+  {
+    "value": "Richmond Valley",
+    "synonyms": [
+      "Richmond Valley"
+    ]
+  },
+  {
+    "value": "Rockaway Avenue",
+    "synonyms": [
+      "Rockaway Avenue"
+    ]
+  },
+  {
+    "value": "Rockaway Boulevard",
+    "synonyms": [
+      "Rockaway Boulevard"
+    ]
+  },
+  {
+    "value": "Rockaway Park, Beach 116th Street",
+    "synonyms": [
+      "Rockaway Park",
+      "Beach 116th Street",
+      "Beach 116th Street, Rockaway Park",
+      "Rockaway Park, Beach 116th Street"
+    ]
+  },
+  {
+    "value": "Roosevelt Island",
+    "synonyms": [
+      "Roosevelt Island"
+    ]
+  },
+  {
+    "value": "S.B. Coney Island",
+    "synonyms": [
+      "S.B. Coney Island"
+    ]
+  },
+  {
+    "value": "Saratoga Avenue",
+    "synonyms": [
+      "Saratoga Avenue"
+    ]
+  },
+  {
+    "value": "Seneca Avenue",
+    "synonyms": [
+      "Seneca Avenue"
+    ]
+  },
+  {
+    "value": "Sheepshead Bay",
+    "synonyms": [
+      "Sheepshead Bay"
+    ]
+  },
+  {
+    "value": "Shepherd Avenue",
+    "synonyms": [
+      "Shepherd Avenue"
+    ]
+  },
+  {
+    "value": "Simpson Street",
+    "synonyms": [
+      "Simpson Street"
+    ]
+  },
+  {
+    "value": "Smith, 9th Streets",
+    "synonyms": [
+      "Smith",
+      "9th Streets",
+      "9th Streets, Smith",
+      "Smith, 9th Streets"
+    ]
+  },
+  {
+    "value": "South Ferry",
+    "synonyms": [
+      "South Ferry"
+    ]
+  },
+  {
+    "value": "South Ferry Loop",
+    "synonyms": [
+      "South Ferry Loop"
+    ]
+  },
+  {
+    "value": "Spring Street",
+    "synonyms": [
+      "Spring Street"
+    ]
+  },
+  {
+    "value": "Stapleton",
+    "synonyms": [
+      "Stapleton"
+    ]
+  },
+  {
+    "value": "Steinway Street",
+    "synonyms": [
+      "Steinway Street"
+    ]
+  },
+  {
+    "value": "Sterling Street",
+    "synonyms": [
+      "Sterling Street"
+    ]
+  },
+  {
+    "value": "Street George",
+    "synonyms": [
+      "Street George"
+    ]
+  },
+  {
+    "value": "Street Lawrence Avenue",
+    "synonyms": [
+      "Street Lawrence Avenue"
+    ]
+  },
+  {
+    "value": "Sutphin Boulevard",
+    "synonyms": [
+      "Sutphin Boulevard"
+    ]
+  },
+  {
+    "value": "Sutphin Boulevard, Archer Avenue, JFK Airport",
+    "synonyms": [
+      "Sutphin Boulevard",
+      "Archer Avenue",
+      "JFK Airport",
+      "Sutphin Boulevard, Archer Avenue, JFK Airport"
+    ]
+  },
+  {
+    "value": "Sutter Avenue",
+    "synonyms": [
+      "Sutter Avenue"
+    ]
+  },
+  {
+    "value": "Sutter Avenue, Rutland Road",
+    "synonyms": [
+      "Sutter Avenue",
+      "Rutland Road",
+      "Rutland Road, Sutter Avenue"
+    ]
+  },
+  {
+    "value": "Times Square, 42nd Street",
+    "synonyms": [
+      "Times Square",
+      "42nd Street",
+      "42nd Street, Times Square",
+      "Times Square, 42nd Street"
+    ]
+  },
+  {
+    "value": "Tompkinsville",
+    "synonyms": [
+      "Tompkinsville"
+    ]
+  },
+  {
+    "value": "Tottenville",
+    "synonyms": [
+      "Tottenville"
+    ]
+  },
+  {
+    "value": "Tremont Avenue",
+    "synonyms": [
+      "Tremont Avenue"
+    ]
+  },
+  {
+    "value": "Union Square, 14th Street",
+    "synonyms": [
+      "Union Square",
+      "14th Street",
+      "14th Street, Union Square",
+      "Union Square, 14th Street"
+    ]
+  },
+  {
+    "value": "Union Street",
+    "synonyms": [
+      "Union Street"
+    ]
+  },
+  {
+    "value": "Utica Avenue",
+    "synonyms": [
+      "Utica Avenue"
+    ]
+  },
+  {
+    "value": "Van Cortlandt Park, 242nd Street",
+    "synonyms": [
+      "Van Cortlandt Park",
+      "242nd Street",
+      "242nd Street, Van Cortlandt Park",
+      "Van Cortlandt Park, 242nd Street"
+    ]
+  },
+  {
+    "value": "Van Siclen Avenue",
+    "synonyms": [
+      "Van Siclen Avenue"
+    ]
+  },
+  {
+    "value": "Vernon Boulevard, Jackson Avenue",
+    "synonyms": [
+      "Vernon Boulevard",
+      "Jackson Avenue",
+      "Jackson Avenue, Vernon Boulevard",
+      "Vernon Boulevard, Jackson Avenue"
+    ]
+  },
+  {
+    "value": "WTC Cortlandt",
+    "synonyms": [
+      "WTC Cortlandt"
+    ]
+  },
+  {
+    "value": "Wakefield, 241st Street",
+    "synonyms": [
+      "Wakefield",
+      "241st Street",
+      "241st Street, Wakefield",
+      "Wakefield, 241st Street"
+    ]
+  },
+  {
+    "value": "Wall Street",
+    "synonyms": [
+      "Wall Street"
+    ]
+  },
+  {
+    "value": "West 4th Street",
+    "synonyms": [
+      "West 4th Street"
+    ]
+  },
+  {
+    "value": "West 8th Street, NY Aquarium",
+    "synonyms": [
+      "West 8th Street",
+      "NY Aquarium",
+      "NY Aquarium, West 8th Street"
+    ]
+  },
+  {
+    "value": "West Farms Square, East Tremont Avenue",
+    "synonyms": [
+      "West Farms Square",
+      "East Tremont Avenue",
+      "East Tremont Avenue, West Farms Square",
+      "West Farms Square, East Tremont Avenue"
+    ]
+  },
+  {
+    "value": "Westchester Square, East Tremont Avenue",
+    "synonyms": [
+      "Westchester Square",
+      "East Tremont Avenue",
+      "East Tremont Avenue, Westchester Square",
+      "Westchester Square, East Tremont Avenue"
+    ]
+  },
+  {
+    "value": "Whitehall Street",
+    "synonyms": [
+      "Whitehall Street"
+    ]
+  },
+  {
+    "value": "Whitlock Avenue",
+    "synonyms": [
+      "Whitlock Avenue"
+    ]
+  },
+  {
+    "value": "Wilson Avenue",
+    "synonyms": [
+      "Wilson Avenue"
+    ]
+  },
+  {
+    "value": "Winthrop Street",
+    "synonyms": [
+      "Winthrop Street"
+    ]
+  },
+  {
+    "value": "Woodhaven Boulevard",
+    "synonyms": [
+      "Woodhaven Boulevard"
+    ]
+  },
+  {
+    "value": "Woodlawn",
+    "synonyms": [
+      "Woodlawn"
+    ]
+  },
+  {
+    "value": "Woodside, 61st Street",
+    "synonyms": [
+      "Woodside",
+      "61st Street",
+      "61st Street, Woodside",
+      "Woodside, 61st Street"
+    ]
+  },
+  {
+    "value": "World Trade Center",
+    "synonyms": [
+      "World Trade Center"
+    ]
+  },
+  {
+    "value": "York Street",
+    "synonyms": [
+      "York Street"
+    ]
+  },
+  {
+    "value": "Zerega Avenue",
+    "synonyms": [
+      "Zerega Avenue"
+    ]
+  }
 ]

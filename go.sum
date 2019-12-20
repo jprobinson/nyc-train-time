@@ -132,6 +132,8 @@ github.com/jprobinson/gtfs v0.0.0-20191220000701-96b6abb83f6c h1:GQMWgwmEiVInKOp
 github.com/jprobinson/gtfs v0.0.0-20191220000701-96b6abb83f6c/go.mod h1:73BVqBB6BVV2qJWOZP5bleDNy7blKRqSzcMgR9pvbxY=
 github.com/jprobinson/gtfs v0.0.0-20191220001050-b303232254b0 h1:bqXAfhPuxquWHePp/BFjGG3okYYij4lTFM9/u1mXvMM=
 github.com/jprobinson/gtfs v0.0.0-20191220001050-b303232254b0/go.mod h1:73BVqBB6BVV2qJWOZP5bleDNy7blKRqSzcMgR9pvbxY=
+github.com/jprobinson/gtfs v0.0.0-20191220010428-e5caed9b38a6 h1:LZm7EhRlBKkn4EaKvWvQPBunyvLjMukJK7mALrcX1ao=
+github.com/jprobinson/gtfs v0.0.0-20191220010428-e5caed9b38a6/go.mod h1:73BVqBB6BVV2qJWOZP5bleDNy7blKRqSzcMgR9pvbxY=
 github.com/jstemmer/go-junit-report v0.0.0-20190106144839-af01ea7f8024 h1:rBMNdlhTLzJjJSDIjNEXX1Pz3Hmwmz91v+zycvx9PJc=
 github.com/jstemmer/go-junit-report v0.0.0-20190106144839-af01ea7f8024/go.mod h1:6v2b51hI/fHJwM22ozAgKL4VKDeJcHhJFhtBdhmNjmU=
 github.com/kelseyhightower/envconfig v1.3.0 h1:IvRS4f2VcIQy6j4ORGIf9145T/AsUB+oY8LyvN8BXNM=
